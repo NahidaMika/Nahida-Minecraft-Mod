@@ -5,14 +5,14 @@
 	"name": "Nahida Mod",
 	"description": "This is an example description! Tell everyone what your mod is about!",
 	"authors": [
-		"Me!"
+		"Nahida"
 	],
 	"contact": {
-		"homepage": "https://fabricmc.net/",
-		"sources": "https://github.com/FabricMC/fabric-example-mod"
+		"homepage": "https://nahidamika.github.io",
+		"sources": "https://github.com/NahidaMika/Nahida-Minecraft-Mod"
 	},
-	"license": "CC0-1.0",
-	"icon": "assets/nahida-mod/icon.png",
+	"license": "MIT-license",
+	"icon": "assets/nahida-mod/IconoCurioso.png",
 	"environment": "*",
 	"entrypoints": {
 		"main": [
