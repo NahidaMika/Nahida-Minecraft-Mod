@@ -15,7 +15,7 @@
     },
     "has_the_recipe": {
       "conditions": {
-        "recipe": "minecraft:nahida_ore"
+        "recipe": "minecraft:nahida_ingot"
       },
       "trigger": "minecraft:recipe_unlocked"
     }
@@ -28,7 +28,7 @@
   ],
   "rewards": {
     "recipes": [
-      "minecraft:nahida_ore"
+      "minecraft:nahida_ingot"
     ]
   }
 }

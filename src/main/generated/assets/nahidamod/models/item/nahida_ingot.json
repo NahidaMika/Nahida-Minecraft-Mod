@@ -1,6 +1,6 @@
 {
   "parent": "minecraft:item/generated",
   "textures": {
-    "layer0": "nahidamod:item/nahida_ore"
+    "layer0": "nahidamod:item/nahida_ingot"
   }
 }
