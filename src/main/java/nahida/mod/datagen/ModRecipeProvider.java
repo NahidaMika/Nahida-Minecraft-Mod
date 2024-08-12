@@ -1,6 +1,7 @@
 package nahida.mod.datagen;
 
 import nahida.mod.Item.ModItems;
+import nahida.mod.blocks.ModBlocks;
 import net.fabricmc.fabric.api.datagen.v1.FabricDataOutput;
 import net.fabricmc.fabric.api.datagen.v1.provider.FabricRecipeProvider;
 import net.minecraft.data.server.recipe.RecipeExporter;
@@ -32,5 +33,12 @@ public class ModRecipeProvider extends FabricRecipeProvider {
                 .input('#', Items.ENCHANTED_GOLDEN_APPLE)
                 .criterion(hasItem(Items.ENCHANTED_GOLDEN_APPLE), conditionsFromItem(Items.ENCHANTED_GOLDEN_APPLE))
                 .offerTo(exporter, Identifier.tryParse(getRecipeName(ModItems.NAHIDA_INGOT)));
+        ShapedRecipeJsonBuilder.create(RecipeCategory.MISC, ModBlocks.NAHIDA_BLOCK, 1)
+                .pattern("NNN")
+                .pattern("NNN")
+                .pattern("NNN")
+                .input('N', ModItems.NAHIDA_INGOT)
+                .criterion(hasItem(ModItems.NAHIDA_INGOT), conditionsFromItem(ModItems.NAHIDA_INGOT))
+                .offerTo(exporter, Identifier.tryParse(getRecipeName(ModBlocks.NAHIDA_BLOCK)));
             }
 }

@@ -1,5 +1,7 @@
-// 1.20.4	2024-08-12T01:40:06.4212207	Nahida Mod/Recipes
+// 1.20.4	2024-08-12T14:08:50.8221277	Nahida Mod/Recipes
 65189c4bdcfc6d89dff0b8d8875de7cfa562238a data\nahidamod\advancements\recipes\misc\nahida_ingot.json
+d75368e23023e7745c8233fc0d9b48b7abcf4932 data\nahidamod\advancements\recipes\misc\nahida_block.json
 7ab33baa72bdfdd6f644aabbf42e66971d299160 data\nahidamod\recipes\enchanted_golden_apple.json
 512fee32a918f6c6e3ef17893f4b8bba36a99f65 data\nahidamod\advancements\recipes\misc\enchanted_golden_apple.json
+aa285b1940c59feb8d3809f581d8765a5ae29131 data\nahidamod\recipes\nahida_block.json
 80b04544886fd7caf170ce1e11ed5d93c660f864 data\nahidamod\recipes\nahida_ingot.json

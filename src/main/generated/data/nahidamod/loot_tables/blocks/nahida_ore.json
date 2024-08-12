@@ -24,7 +24,7 @@
                   }
                 }
               ],
-              "name": "minecraft:diamond_block"
+              "name": "nahidamod:nahida_ore"
             },
             {
               "type": "minecraft:item",
@@ -47,7 +47,7 @@
                   "function": "minecraft:explosion_decay"
                 }
               ],
-              "name": "minecraft:enchanted_golden_apple"
+              "name": "nahidamod:nahida_ingot"
             }
           ]
         }

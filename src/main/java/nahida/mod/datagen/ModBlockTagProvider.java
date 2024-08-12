@@ -8,6 +8,8 @@ import net.minecraft.registry.tag.BlockTags;
 
 import java.util.concurrent.CompletableFuture;
 
+import nahida.mod.blocks.ModBlocks;
+
 public class ModBlockTagProvider extends FabricTagProvider.BlockTagProvider {
     public ModBlockTagProvider(FabricDataOutput output, CompletableFuture<RegistryWrapper.WrapperLookup> registriesFuture) {
         super(output, registriesFuture);
@@ -16,7 +18,9 @@ public class ModBlockTagProvider extends FabricTagProvider.BlockTagProvider {
     @Override
 public void configure(RegistryWrapper.WrapperLookup arg) {
         getOrCreateTagBuilder(BlockTags.PICKAXE_MINEABLE)
-                .add(Blocks.BEDROCK);
+                .add(Blocks.BEDROCK)
+                .add(ModBlocks.NAHIDA_BLOCK)
+                .add(ModBlocks.NAHIDA_ORE);
 
         getOrCreateTagBuilder(BlockTags.NEEDS_STONE_TOOL) 
                 .add(Blocks.BEDROCK);

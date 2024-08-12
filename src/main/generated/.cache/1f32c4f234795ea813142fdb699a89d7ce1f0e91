@@ -1,6 +1,6 @@
-// 1.20.4	2024-08-12T01:40:06.4182292	Nahida Mod/Tags for minecraft:block
-2e0e71f7dbffea6202a4421d5c31de9f830d5f59 data\minecraft\tags\blocks\mineable\pickaxe.json
-2e0e71f7dbffea6202a4421d5c31de9f830d5f59 data\minecraft\tags\blocks\mineable\hoe.json
+// 1.20.4	2024-08-12T14:08:50.8201334	Nahida Mod/Tags for minecraft:block
 2e0e71f7dbffea6202a4421d5c31de9f830d5f59 data\minecraft\tags\blocks\mineable\axe.json
 2e0e71f7dbffea6202a4421d5c31de9f830d5f59 data\minecraft\tags\blocks\needs_stone_tool.json
+2e0e71f7dbffea6202a4421d5c31de9f830d5f59 data\minecraft\tags\blocks\mineable\hoe.json
+71b42ea5443a5ab507a866c627689a783ffb4b81 data\minecraft\tags\blocks\mineable\pickaxe.json
 e786de26f8dd747102f1a3bf8d684d69c31dab4a data\minecraft\tags\blocks\climbable.json

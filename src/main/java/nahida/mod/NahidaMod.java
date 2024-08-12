@@ -7,6 +7,7 @@ import org.slf4j.LoggerFactory;
 
 import nahida.mod.Item.ModItemGroups;
 import nahida.mod.Item.ModItems;
+import nahida.mod.blocks.ModBlocks;
 
 public class NahidaMod implements ModInitializer {
 	// This logger is used to write text to the console and the log file.
@@ -25,6 +26,7 @@ public class NahidaMod implements ModInitializer {
 		ModItems.RegisterModItems();
 		ModItemGroups.RegisterItemGroups();
 		LOGGER.info("こんにちはファブリックワールド!");
+		ModBlocks.registerModBlocks();
 		LOGGER.info("Halo dunia Kain!");
 	}
 }

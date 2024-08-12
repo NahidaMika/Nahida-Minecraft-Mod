@@ -3,6 +3,7 @@ package nahida.mod.Item;
 import net.minecraft.registry.Registry;
 
 import nahida.mod.NahidaMod;
+import nahida.mod.blocks.ModBlocks;
 import net.minecraft.registry.Registries;
 import net.minecraft.text.Text;
 import net.minecraft.util.Identifier;
@@ -18,6 +19,8 @@ public class ModItemGroups {
             .icon(() -> new ItemStack(ModItems.NAHIDA_INGOT))
             .entries((displayContext, entries) -> {
                 entries.add(ModItems.NAHIDA_INGOT);
+                entries.add(ModBlocks.NAHIDA_ORE);
+                entries.add(ModBlocks.NAHIDA_BLOCK);
             })
             .build());
     public static void RegisterItemGroups() { 

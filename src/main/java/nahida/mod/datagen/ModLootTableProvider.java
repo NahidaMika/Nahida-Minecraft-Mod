@@ -1,5 +1,7 @@
 package nahida.mod.datagen;
 
+import nahida.mod.Item.ModItems;
+import nahida.mod.blocks.ModBlocks;
 import net.fabricmc.fabric.api.datagen.v1.FabricDataOutput;
 import net.fabricmc.fabric.api.datagen.v1.provider.FabricBlockLootTableProvider;
 import net.minecraft.block.Block;
@@ -22,7 +24,8 @@ public class ModLootTableProvider extends FabricBlockLootTableProvider {
 
     @Override
     public void generate() {
-        addDrop(Blocks.DIAMOND_BLOCK, oreDrops(Blocks.BEDROCK, Items.ENCHANTED_GOLDEN_APPLE));
+        addDrop(Blocks.DIAMOND_BLOCK, oreDrops(Blocks.DIAMOND_BLOCK, Items.ENCHANTED_GOLDEN_APPLE));
+        addDrop(ModBlocks.NAHIDA_ORE, oreDrops(ModBlocks.NAHIDA_ORE, ModItems.NAHIDA_INGOT));
     }
 
     public LootTable.Builder oreDrops(Block drop, Item item) {
@@ -31,7 +34,7 @@ public class ModLootTableProvider extends FabricBlockLootTableProvider {
                 (LootPoolEntry.Builder<?>)this.applyExplosionDecay(
                         drop,
                         ItemEntry.builder(item)
-                                .apply(SetCountLootFunction.builder(UniformLootNumberProvider.create(100.0F, 1000.0F)))
+                                .apply(SetCountLootFunction.builder(UniformLootNumberProvider.create(1.0F, 5.0F)))
                                 .apply(ApplyBonusLootFunction.oreDrops(Enchantments.FORTUNE))
                 )
         );
