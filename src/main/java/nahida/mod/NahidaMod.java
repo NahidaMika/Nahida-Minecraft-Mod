@@ -5,6 +5,9 @@ import net.fabricmc.api.ModInitializer;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 
+import nahida.mod.Item.ModItemGroups;
+import nahida.mod.Item.ModItems;
+
 public class NahidaMod implements ModInitializer {
 	// This logger is used to write text to the console and the log file.
 	// It is considered best practice to use your mod id as the logger's name.
@@ -19,7 +22,9 @@ public class NahidaMod implements ModInitializer {
 		// Proceed with mild caution.
 
 		LOGGER.info("面料世界你好！");
+		ModItems.RegisterModItems();
 		LOGGER.info("こんにちはファブリックワールド!");
+		ModItemGroups.RegisterItemGroups();
 		LOGGER.info("Halo dunia Kain!");
 	}
 }
