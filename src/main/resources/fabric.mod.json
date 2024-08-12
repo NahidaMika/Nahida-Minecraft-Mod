@@ -26,7 +26,7 @@
 		]
 	},
 	"mixins": [
-		"nahida-mod.mixins.json",
+		"nahidamod.mixins.json",
 		{
 			"config": "nahidamod.client.mixins.json",
 			"environment": "client"
