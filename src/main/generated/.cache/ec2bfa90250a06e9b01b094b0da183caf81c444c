@@ -1,8 +1,11 @@
-// 1.20.4	2024-08-12T14:08:50.8241222	Nahida Mod/Model Definitions
+// 1.20.4	2024-08-12T16:43:14.6824172	Nahida Mod/Model Definitions
 5d20e424b26a6616add0bf8fbcc6665cbe1e910f assets\nahidamod\models\item\nahida_ore.json
 77f5a96ddf57367733df52ecc3405d09ab7f85fe assets\nahidamod\blockstates\nahida_ore.json
+7d70636997cca43afc3cd9fc778b7751affe9c63 assets\nahidamod\models\item\sushi.json
 da2a533313d874aa809d56bf26fd7c79a1441d1e assets\nahidamod\blockstates\nahida_block.json
 e9fc2b141f7dd8dbde47d6a57730f9310f8581f1 assets\nahidamod\models\item\nahida_block.json
+a099076e7ae470acca9d3f073736d517776a0f65 assets\nahidamod\models\item\raw_nahida.json
 53924fc8651a070550a09c24f7532073fb719110 assets\nahidamod\models\block\nahida_ore.json
 5d631bada777731d6c5b05172230a6636e7c8c93 assets\nahidamod\models\item\nahida_ingot.json
 5dd7edf87fc8c15065e634a9f0d3b46a64c2f4d6 assets\nahidamod\models\block\nahida_block.json
+559d6b1e190fb3c852fbeb34f632e391231c5575 assets\nahidamod\models\item\nahida_sex.json

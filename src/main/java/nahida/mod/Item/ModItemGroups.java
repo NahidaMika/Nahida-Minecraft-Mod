@@ -21,6 +21,9 @@ public class ModItemGroups {
                 entries.add(ModItems.NAHIDA_INGOT);
                 entries.add(ModBlocks.NAHIDA_ORE);
                 entries.add(ModBlocks.NAHIDA_BLOCK);
+                entries.add(ModItems.RAW_NAHIDA);
+                entries.add(ModItems.NAHIDA_SEX);
+                entries.add(ModItems.SUSHI);
             })
             .build());
     public static void RegisterItemGroups() { 

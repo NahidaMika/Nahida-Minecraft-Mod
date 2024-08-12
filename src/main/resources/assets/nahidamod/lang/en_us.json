@@ -1,6 +1,9 @@
 {
     "itemgroup.nahidamod" : "Nahida's Mod",
     "item.nahidamod.nahida_ingot" : "Nahida Ingot",
+    "item.nahidamod.nahida_sex" : "Nahida Sex",
+    "item.nahidamod.raw_nahida" : "Raw Nahida",
+    "item.nahidamod.sushi" : "Sushi",
     "block.nahidamod.nahida_block" : "Nahida Block",
     "block.nahidamod.nahida_ore" : "Nahida Ore"
 }

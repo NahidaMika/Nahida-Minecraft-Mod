@@ -23,5 +23,8 @@ public class ModModelProvider extends FabricModelProvider {
     @Override
     public void generateItemModels(ItemModelGenerator itemModelGenerator) {
         itemModelGenerator.register(ModItems.NAHIDA_INGOT, Models.GENERATED);
+        itemModelGenerator.register(ModItems.NAHIDA_SEX, Models.GENERATED);
+        itemModelGenerator.register(ModItems.RAW_NAHIDA, Models.GENERATED);
+        itemModelGenerator.register(ModItems.SUSHI, Models.GENERATED);
     }
 }

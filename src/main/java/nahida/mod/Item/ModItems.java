@@ -7,11 +7,17 @@ import net.minecraft.item.Items;
 import net.minecraft.registry.Registries;
 import net.minecraft.registry.Registry;
 import net.minecraft.util.Identifier;
+import net.minecraft.util.Rarity;
 import net.minecraft.item.Item;
 import net.minecraft.item.ItemGroups;
 
 public class ModItems {
+    
     public static final Item NAHIDA_INGOT = registerItem("nahida_ingot", new Item(new Item.Settings()));
+    public static final Item RAW_NAHIDA = registerItem("raw_nahida", new Item(new Item.Settings()));
+    public static final Item NAHIDA_SEX = registerItem("nahida_sex", new Item(new Item.Settings()));
+    public static final Item SUSHI = registerItem("sushi", new Item(new Item.Settings().food(ModFoodComponents.SUSHI).maxCount(16).rarity(Rarity.EPIC)));
+    
     private static void addItemsToFirstItemGroup(FabricItemGroupEntries entries) {
         entries.add(Items.STONE);
     }
