@@ -1,6 +1,6 @@
 {
 	"schemaVersion": 1,
-	"id": "nahida-mod",
+	"id": "nahidamod",
 	"version": "${version}",
 	"name": "Nahida Mod",
 	"description": "This is an example description! Tell everyone what your mod is about!",
@@ -12,7 +12,7 @@
 		"sources": "https://github.com/NahidaMika/Nahida-Minecraft-Mod"
 	},
 	"license": "MIT-License",
-	"icon": "assets/nahida-mod/IconoCurioso.png",
+	"icon": "assets/nahidamod/IconoCurioso.png",
 	"environment": "*",
 	"entrypoints": {
 		"main": [
@@ -28,7 +28,7 @@
 	"mixins": [
 		"nahida-mod.mixins.json",
 		{
-			"config": "nahida-mod.client.mixins.json",
+			"config": "nahidamod.client.mixins.json",
 			"environment": "client"
 		}
 	],

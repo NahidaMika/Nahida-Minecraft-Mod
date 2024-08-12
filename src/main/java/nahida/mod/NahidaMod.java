@@ -23,8 +23,8 @@ public class NahidaMod implements ModInitializer {
 
 		LOGGER.info("面料世界你好！");
 		ModItems.RegisterModItems();
-		LOGGER.info("こんにちはファブリックワールド!");
 		ModItemGroups.RegisterItemGroups();
+		LOGGER.info("こんにちはファブリックワールド!");
 		LOGGER.info("Halo dunia Kain!");
 	}
 }
