@@ -2,7 +2,8 @@
   "replace": false,
   "values": [
     "minecraft:bedrock",
-    "nahidamod:nahida_block",
-    "nahidamod:nahida_ore"
+    "nahidamod:aurora_block",
+    "nahidamod:aurora_ore",
+    "nahidamod:deepslate_aurora_ore"
   ]
 }

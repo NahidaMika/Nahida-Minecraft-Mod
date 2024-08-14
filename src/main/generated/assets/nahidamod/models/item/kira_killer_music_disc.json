@@ -1,0 +1,6 @@
+{
+  "parent": "minecraft:item/generated",
+  "textures": {
+    "layer0": "nahidamod:item/kira_killer_music_disc"
+  }
+}

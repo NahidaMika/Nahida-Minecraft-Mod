@@ -1,8 +1,8 @@
 {
-  "AURORA_block_break": {
-    "subtitle": "sounds.nahidamod.AURORA_block_break",
+  "aurora_block_break": {
+    "subtitle": "sounds.nahidamod.aurora_block_break",
     "sounds": [
-      "nahidamod:AURORA_block_break"
+      "nahidamod:aurora_block_break"
     ]
   },
   "aurora_block_fall": {
@@ -27,6 +27,14 @@
     "subtitle": "sounds.nahidamod.aurora_block_step",
     "sounds": [
       "nahidamod:aurora_block_step"
+    ]
+  },
+  "kira_killer": {
+    "sounds": [
+      {
+        "name":"nahidamod:kira_killer",
+        "stream": true
+      }
     ]
   }
 }

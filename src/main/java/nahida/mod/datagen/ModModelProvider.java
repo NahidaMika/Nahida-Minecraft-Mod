@@ -26,8 +26,14 @@ public class ModModelProvider extends FabricModelProvider {
         itemModelGenerator.register(ModItems.AURORA_INGOT, Models.GENERATED);
         itemModelGenerator.register(ModItems.NAHIDA_SEX, Models.GENERATED);
         itemModelGenerator.register(ModItems.RAW_AURORA, Models.GENERATED);
-        itemModelGenerator.register(ModItems.SUSHI, Models.GENERATED);
+        itemModelGenerator.register(ModItems.SUSHI, Models.HANDHELD);
         itemModelGenerator.register(ModItems.BURNING_PAPER, Models.GENERATED);
+        itemModelGenerator.register(ModItems.AURORA_AXE, Models.HANDHELD);
+        itemModelGenerator.register(ModItems.AURORA_HOE, Models.HANDHELD);
+        itemModelGenerator.register(ModItems.AURORA_PICKAXE, Models.HANDHELD);
+        itemModelGenerator.register(ModItems.AURORA_SHOVEL, Models.HANDHELD);
+        itemModelGenerator.register(ModItems.AURORA_SWORD, Models.HANDHELD);
+        itemModelGenerator.register(ModItems.KIRA_KILLER_MUSIC_DISC, Models.GENERATED);
 
     }
 }

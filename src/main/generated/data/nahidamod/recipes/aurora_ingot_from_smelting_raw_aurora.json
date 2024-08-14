@@ -1,0 +1,11 @@
+{
+  "type": "minecraft:smelting",
+  "category": "misc",
+  "cookingtime": 200,
+  "experience": 2.5,
+  "group": "nahida_ingot",
+  "ingredient": {
+    "item": "nahidamod:raw_aurora"
+  },
+  "result": "nahidamod:aurora_ingot"
+}

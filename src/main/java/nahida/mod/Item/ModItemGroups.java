@@ -26,6 +26,12 @@ public class ModItemGroups {
                 entries.add(ModItems.SUSHI);
                 entries.add(ModItems.BURNING_PAPER);
                 entries.add(ModBlocks.DEEPSLATE_AURORA_ORE);
+                entries.add(ModItems.AURORA_AXE);
+                entries.add(ModItems.AURORA_PICKAXE);
+                entries.add(ModItems.AURORA_HOE);
+                entries.add(ModItems.AURORA_SHOVEL);
+                entries.add(ModItems.AURORA_SWORD);
+                entries.add(ModItems.KIRA_KILLER_MUSIC_DISC);
             })
             .build());
     public static void RegisterItemGroups() { 

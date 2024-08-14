@@ -1,0 +1,6 @@
+{
+  "parent": "minecraft:block/cube_all",
+  "textures": {
+    "all": "nahidamod:block/deepslate_aurora_ore"
+  }
+}

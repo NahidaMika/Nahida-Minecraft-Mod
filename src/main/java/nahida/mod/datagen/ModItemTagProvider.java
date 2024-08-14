@@ -3,8 +3,11 @@ package nahida.mod.datagen;
 import net.fabricmc.fabric.api.datagen.v1.FabricDataOutput;
 import net.fabricmc.fabric.api.datagen.v1.provider.FabricTagProvider;
 import net.minecraft.registry.RegistryWrapper;
+import net.minecraft.registry.tag.ItemTags;
 
 import java.util.concurrent.CompletableFuture;
+
+import nahida.mod.Item.ModItems;
 
 public class ModItemTagProvider extends FabricTagProvider.ItemTagProvider {
 
@@ -14,6 +17,10 @@ public class ModItemTagProvider extends FabricTagProvider.ItemTagProvider {
 
     @Override
     public void configure(RegistryWrapper.WrapperLookup arg) {
-
+        //getOrCreateTagBuilder(ItemTags.TRIMMABLE_ARMOR)
+        //.add(ModItems.AURORA_HELMET)
+        
+        getOrCreateTagBuilder(ItemTags.MUSIC_DISCS)
+            .add(ModItems.KIRA_KILLER_MUSIC_DISC);
     }
 }

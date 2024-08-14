@@ -5,10 +5,8 @@ import nahida.mod.blocks.ModBlocks;
 import net.fabricmc.fabric.api.datagen.v1.FabricDataOutput;
 import net.fabricmc.fabric.api.datagen.v1.provider.FabricBlockLootTableProvider;
 import net.minecraft.block.Block;
-import net.minecraft.block.Blocks;
 import net.minecraft.enchantment.Enchantments;
 import net.minecraft.item.Item;
-import net.minecraft.item.Items;
 import net.minecraft.loot.LootTable;
 import net.minecraft.loot.entry.ItemEntry;
 import net.minecraft.loot.entry.LootPoolEntry;
@@ -24,8 +22,9 @@ public class ModLootTableProvider extends FabricBlockLootTableProvider {
 
     @Override
     public void generate() {
-        addDrop(Blocks.DIAMOND_BLOCK, oreDrops(Blocks.DIAMOND_BLOCK, Items.ENCHANTED_GOLDEN_APPLE));
         addDrop(ModBlocks.AURORA_ORE, oreDrops(ModBlocks.AURORA_ORE, ModItems.RAW_AURORA));
+        addDrop(ModBlocks.DEEPSLATE_AURORA_ORE, oreDrops(ModBlocks.DEEPSLATE_AURORA_ORE, ModItems.RAW_AURORA));
+        addDrop(ModBlocks.AURORA_BLOCK);
     }
 
     public LootTable.Builder oreDrops(Block drop, Item item) {

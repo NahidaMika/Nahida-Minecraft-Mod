@@ -3,8 +3,11 @@ package nahida.mod.datagen;
 import net.fabricmc.fabric.api.datagen.v1.FabricDataOutput;
 import net.fabricmc.fabric.api.datagen.v1.provider.FabricTagProvider;
 import net.minecraft.block.Blocks;
+import net.minecraft.registry.RegistryKeys;
 import net.minecraft.registry.RegistryWrapper;
 import net.minecraft.registry.tag.BlockTags;
+import net.minecraft.registry.tag.TagKey;
+import net.minecraft.util.Identifier;
 
 import java.util.concurrent.CompletableFuture;
 
@@ -20,7 +23,8 @@ public void configure(RegistryWrapper.WrapperLookup arg) {
         getOrCreateTagBuilder(BlockTags.PICKAXE_MINEABLE)
                 .add(Blocks.BEDROCK)
                 .add(ModBlocks.AURORA_BLOCK)
-                .add(ModBlocks.AURORA_ORE);
+                .add(ModBlocks.AURORA_ORE)
+                .add(ModBlocks.DEEPSLATE_AURORA_ORE);
 
         getOrCreateTagBuilder(BlockTags.NEEDS_STONE_TOOL) 
                 .add(Blocks.BEDROCK);
@@ -53,5 +57,9 @@ public void configure(RegistryWrapper.WrapperLookup arg) {
 
         getOrCreateTagBuilder(BlockTags.HOE_MINEABLE)
                 .add(Blocks.BEDROCK);
+
+        getOrCreateTagBuilder(TagKey.of(RegistryKeys.BLOCK, new Identifier("fabric", "needs_tool_level_5")))
+                .add(Blocks.BEDROCK)
+                .add(ModBlocks.AURORA_BLOCK);
     }
 }
