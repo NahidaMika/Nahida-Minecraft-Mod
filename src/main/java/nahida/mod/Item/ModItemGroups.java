@@ -16,14 +16,16 @@ public class ModItemGroups {
     Identifier.tryParse(NahidaMod.MOD_ID + ":" + "nahidamod_itemgroup"),
     FabricItemGroup.builder()
             .displayName(Text.translatable("itemgroup.nahidamod"))
-            .icon(() -> new ItemStack(ModItems.NAHIDA_INGOT))
+            .icon(() -> new ItemStack(ModItems.AURORA_INGOT))
             .entries((displayContext, entries) -> {
-                entries.add(ModItems.NAHIDA_INGOT);
-                entries.add(ModBlocks.NAHIDA_ORE);
-                entries.add(ModBlocks.NAHIDA_BLOCK);
-                entries.add(ModItems.RAW_NAHIDA);
+                entries.add(ModItems.AURORA_INGOT);
+                entries.add(ModBlocks.AURORA_ORE);
+                entries.add(ModBlocks.AURORA_BLOCK);
+                entries.add(ModItems.RAW_AURORA);
                 entries.add(ModItems.NAHIDA_SEX);
                 entries.add(ModItems.SUSHI);
+                entries.add(ModItems.BURNING_PAPER);
+                entries.add(ModBlocks.DEEPSLATE_AURORA_ORE);
             })
             .build());
     public static void RegisterItemGroups() { 

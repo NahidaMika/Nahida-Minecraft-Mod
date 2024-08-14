@@ -19,8 +19,8 @@ public class ModBlockTagProvider extends FabricTagProvider.BlockTagProvider {
 public void configure(RegistryWrapper.WrapperLookup arg) {
         getOrCreateTagBuilder(BlockTags.PICKAXE_MINEABLE)
                 .add(Blocks.BEDROCK)
-                .add(ModBlocks.NAHIDA_BLOCK)
-                .add(ModBlocks.NAHIDA_ORE);
+                .add(ModBlocks.AURORA_BLOCK)
+                .add(ModBlocks.AURORA_ORE);
 
         getOrCreateTagBuilder(BlockTags.NEEDS_STONE_TOOL) 
                 .add(Blocks.BEDROCK);

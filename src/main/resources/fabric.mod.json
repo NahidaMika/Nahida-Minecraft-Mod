@@ -3,16 +3,16 @@
 	"id": "nahidamod",
 	"version": "${version}",
 	"name": "Nahida Mod",
-	"description": "This is an example description! Tell everyone what your mod is about!",
+	"description": "This is my firt interaction with java and about modding minecraft, this mod add several items too the game such as minerals, armors, tools, crops, etc.",
 	"authors": [
 		"Nahida"
 	],
 	"contact": {
-		"homepage": "https://nahidamika.github.io",
-		"sources": "https://github.com/NahidaMika/Nahida-Minecraft-Mod"
+		"homepage": "https://github.com/NahidaMika/Nahida-Minecraft-Mod",
+		"sources": "https://nahidamika.github.io"
 	},
 	"license": "MIT-License",
-	"icon": "assets/nahidamod/IconoCurioso.png",
+	"icon": "assets/nahidamod/Icon.png",
 	"environment": "*",
 	"entrypoints": {
 		"main": [

@@ -1,0 +1,32 @@
+{
+  "AURORA_block_break": {
+    "subtitle": "sounds.nahidamod.AURORA_block_break",
+    "sounds": [
+      "nahidamod:AURORA_block_break"
+    ]
+  },
+  "aurora_block_fall": {
+    "subtitle": "sounds.nahidamod.aurora_block_fall",
+    "sounds": [
+      "nahidamod:aurora_block_fall"
+    ]
+  },
+  "aurora_block_hit": {
+    "subtitle": "sounds.nahidamod.aurora_block_hit",
+    "sounds": [
+      "nahidamod:aurora_block_hit"
+    ]
+  },
+  "aurora_block_place": {
+    "subtitle": "sounds.nahidamod.aurora_block_place",
+    "sounds": [
+      "nahidamod:aurora_block_place"
+    ]
+  },
+  "aurora_block_step": {
+    "subtitle": "sounds.nahidamod.aurora_block_step",
+    "sounds": [
+      "nahidamod:aurora_block_step"
+    ]
+  }
+}

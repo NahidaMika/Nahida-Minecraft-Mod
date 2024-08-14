@@ -2,14 +2,14 @@
   "type": "minecraft:crafting_shaped",
   "category": "misc",
   "key": {
-    "N": {
+    "#": {
       "item": "nahidamod:nahida_ingot"
     }
   },
   "pattern": [
-    "NNN",
-    "NNN",
-    "NNN"
+    "###",
+    "###",
+    "###"
   ],
   "result": {
     "item": "nahidamod:nahida_block"

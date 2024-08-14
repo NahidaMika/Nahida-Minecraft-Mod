@@ -16,15 +16,18 @@ public class ModModelProvider extends FabricModelProvider {
 
     @Override
     public void generateBlockStateModels(BlockStateModelGenerator blockStateModelGenerator) {
-        blockStateModelGenerator.registerSimpleCubeAll(ModBlocks.NAHIDA_ORE);
-        blockStateModelGenerator.registerSimpleCubeAll(ModBlocks.NAHIDA_BLOCK);
+        blockStateModelGenerator.registerSimpleCubeAll(ModBlocks.AURORA_ORE);
+        blockStateModelGenerator.registerSimpleCubeAll(ModBlocks.AURORA_BLOCK);
+        blockStateModelGenerator.registerSimpleCubeAll(ModBlocks.DEEPSLATE_AURORA_ORE);
     }
 
     @Override
     public void generateItemModels(ItemModelGenerator itemModelGenerator) {
-        itemModelGenerator.register(ModItems.NAHIDA_INGOT, Models.GENERATED);
+        itemModelGenerator.register(ModItems.AURORA_INGOT, Models.GENERATED);
         itemModelGenerator.register(ModItems.NAHIDA_SEX, Models.GENERATED);
-        itemModelGenerator.register(ModItems.RAW_NAHIDA, Models.GENERATED);
+        itemModelGenerator.register(ModItems.RAW_AURORA, Models.GENERATED);
         itemModelGenerator.register(ModItems.SUSHI, Models.GENERATED);
+        itemModelGenerator.register(ModItems.BURNING_PAPER, Models.GENERATED);
+
     }
 }

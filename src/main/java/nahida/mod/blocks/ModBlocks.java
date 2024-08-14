@@ -1,6 +1,7 @@
 package nahida.mod.blocks;
 
 import nahida.mod.NahidaMod;
+import nahida.mod.sounds.ModSounds;
 import net.minecraft.block.AbstractBlock;
 import net.minecraft.block.Block;
 import net.minecraft.block.Blocks;
@@ -13,11 +14,14 @@ import net.minecraft.item.BlockItem;
 
 public class ModBlocks {
 
-    public static final Block NAHIDA_ORE = registerBlock("nahida_ore",
+    public static final Block AURORA_ORE = registerBlock("aurora_ore",
          new Block(AbstractBlock.Settings.copy(Blocks.DIAMOND_ORE).sounds(BlockSoundGroup.NETHERITE)));
     
-    public static final Block NAHIDA_BLOCK = registerBlock("nahida_block",
-        new Block(AbstractBlock.Settings.copy(Blocks.DIAMOND_BLOCK).sounds(BlockSoundGroup.AMETHYST_BLOCK)));
+    public static final Block AURORA_BLOCK = registerBlock("aurora_block",
+        new Block(AbstractBlock.Settings.copy(Blocks.DIAMOND_BLOCK).sounds(ModSounds.AURORA_BLOCK_SOUNDS)));
+
+    public static final Block DEEPSLATE_AURORA_ORE = registerBlock("deepslate_aurora_ore",
+        new Block(AbstractBlock.Settings.copy(Blocks.DEEPSLATE_DIAMOND_ORE).sounds(BlockSoundGroup.DEEPSLATE)));
         
 
     private static Block registerBlock(String name, Block block) {

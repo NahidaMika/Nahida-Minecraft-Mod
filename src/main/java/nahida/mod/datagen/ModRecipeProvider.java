@@ -6,39 +6,51 @@ import net.fabricmc.fabric.api.datagen.v1.FabricDataOutput;
 import net.fabricmc.fabric.api.datagen.v1.provider.FabricRecipeProvider;
 import net.minecraft.data.server.recipe.RecipeExporter;
 import net.minecraft.data.server.recipe.ShapedRecipeJsonBuilder;
+import net.minecraft.item.ItemConvertible;
 import net.minecraft.item.Items;
 import net.minecraft.recipe.book.RecipeCategory;
 import net.minecraft.util.Identifier;
 
+import java.util.List;
+
 public class ModRecipeProvider extends FabricRecipeProvider {
+
+    public static final List<ItemConvertible> OUR_SMELTABLES = List.of(ModItems.RAW_AURORA);
+
+
     public ModRecipeProvider(FabricDataOutput output) {
         super(output);
     }
 
+
     @Override
     public void generate(RecipeExporter exporter) {
-        ShapedRecipeJsonBuilder.create(RecipeCategory.MISC, Items.BEDROCK, 9)
-                .pattern("SSS")
-                .pattern("S#S")
-                .pattern("SSS")
-                .input('S', Items.DIRT)
-                .input('#', Items.ENCHANTED_GOLDEN_APPLE)
-                .criterion(hasItem(Items.ENCHANTED_GOLDEN_APPLE), conditionsFromItem(Items.ENCHANTED_GOLDEN_APPLE))
-                .offerTo(exporter, Identifier.tryParse(getRecipeName(Items.ENCHANTED_GOLDEN_APPLE)));
-        ShapedRecipeJsonBuilder.create(RecipeCategory.MISC, ModItems.NAHIDA_INGOT, 9)
-                .pattern("SSS")
-                .pattern("S#S")
-                .pattern("SSS")
-                .input('S', Items.COBBLESTONE)
-                .input('#', Items.ENCHANTED_GOLDEN_APPLE)
-                .criterion(hasItem(Items.ENCHANTED_GOLDEN_APPLE), conditionsFromItem(Items.ENCHANTED_GOLDEN_APPLE))
-                .offerTo(exporter, Identifier.tryParse(getRecipeName(ModItems.NAHIDA_INGOT)));
-        ShapedRecipeJsonBuilder.create(RecipeCategory.MISC, ModBlocks.NAHIDA_BLOCK, 1)
-                .pattern("NNN")
-                .pattern("NNN")
-                .pattern("NNN")
-                .input('N', ModItems.NAHIDA_INGOT)
-                .criterion(hasItem(ModItems.NAHIDA_INGOT), conditionsFromItem(ModItems.NAHIDA_INGOT))
-                .offerTo(exporter, Identifier.tryParse(getRecipeName(ModBlocks.NAHIDA_BLOCK)));
-            }
-}
+
+        offerSmelting(exporter, OUR_SMELTABLES, RecipeCategory.MISC, ModItems.AURORA_INGOT,
+        2.5f, 200, "nahida_ingot");
+
+        offerBlasting(exporter, OUR_SMELTABLES, RecipeCategory.MISC, ModItems.AURORA_INGOT,
+        2.5f, 100, "nahida_ingot");
+
+        offerReversibleCompactingRecipes(exporter, RecipeCategory.BUILDING_BLOCKS, ModItems.AURORA_INGOT, 
+                RecipeCategory.DECORATIONS, ModBlocks.AURORA_BLOCK);
+
+        //ShapedRecipeJsonBuilder.create(RecipeCategory.MISC, ModBlocks.NAHIDA_BLOCK, 1)
+        //        .pattern("NNN")
+        //        .pattern("NNN")
+        //        .pattern("NNN")
+        //        .input('N', ModItems.NAHIDA_INGOT)
+        //        .criterion(hasItem(ModItems.NAHIDA_INGOT), conditionsFromItem(ModItems.NAHIDA_INGOT))
+        //        .offerTo(exporter, Identifier.tryParse(getRecipeName(ModBlocks.NAHIDA_BLOCK)));
+
+        ShapedRecipeJsonBuilder.create(RecipeCategory.MISC, ModItems.BURNING_PAPER, 64)
+        .pattern("AAA")
+        .pattern("ACA")
+        .pattern("AAA")
+        .input('C', Items.FLINT_AND_STEEL)
+        .input('A', Items.PAPER)
+        .criterion(hasItem(Items.FLINT_AND_STEEL), conditionsFromItem(Items.FLINT_AND_STEEL))
+        .criterion(hasItem(Items.PAPER), conditionsFromItem(Items.PAPER))
+        .offerTo(exporter, Identifier.tryParse(getRecipeName(ModItems.BURNING_PAPER)));
+        }
+};

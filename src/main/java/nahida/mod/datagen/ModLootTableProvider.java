@@ -25,7 +25,7 @@ public class ModLootTableProvider extends FabricBlockLootTableProvider {
     @Override
     public void generate() {
         addDrop(Blocks.DIAMOND_BLOCK, oreDrops(Blocks.DIAMOND_BLOCK, Items.ENCHANTED_GOLDEN_APPLE));
-        addDrop(ModBlocks.NAHIDA_ORE, oreDrops(ModBlocks.NAHIDA_ORE, ModItems.NAHIDA_INGOT));
+        addDrop(ModBlocks.AURORA_ORE, oreDrops(ModBlocks.AURORA_ORE, ModItems.RAW_AURORA));
     }
 
     public LootTable.Builder oreDrops(Block drop, Item item) {

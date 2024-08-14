@@ -1,6 +1,7 @@
 package nahida.mod;
 
 import net.fabricmc.api.ModInitializer;
+import net.fabricmc.fabric.api.registry.FuelRegistry;
 
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
@@ -8,6 +9,8 @@ import org.slf4j.LoggerFactory;
 import nahida.mod.Item.ModItemGroups;
 import nahida.mod.Item.ModItems;
 import nahida.mod.blocks.ModBlocks;
+import nahida.mod.sounds.ModSounds;
+import nahida.mod.util.ModCustomTrades;
 
 public class NahidaMod implements ModInitializer {
 	// This logger is used to write text to the console and the log file.
@@ -23,10 +26,19 @@ public class NahidaMod implements ModInitializer {
 		// Proceed with mild caution.
 
 		LOGGER.info("面料世界你好！");
+		LOGGER.info("こんにちはファブリックワールド!");
+		LOGGER.info("Halo dunia Kain!");
+		LOGGER.info("Initializing the register of custom items/block of " + NahidaMod.MOD_ID );
 		ModItems.RegisterModItems();
 		ModItemGroups.RegisterItemGroups();
-		LOGGER.info("こんにちはファブリックワールド!");
 		ModBlocks.registerModBlocks();
-		LOGGER.info("Halo dunia Kain!");
+		LOGGER.info("Initializing the register of fuel intances of " + NahidaMod.MOD_ID );
+		FuelRegistry.INSTANCE.add(ModItems.BURNING_PAPER, 200);
+		LOGGER.info("Initializing the register of custom trades of " + NahidaMod.MOD_ID );
+		ModCustomTrades.registerCustomTrades();
+		LOGGER.info("Initializing the register of custom sound of " + NahidaMod.MOD_ID );
+		ModSounds.registerSounds();
+
+		
 	}
 }

@@ -1,9 +1,11 @@
 {
     "itemgroup.nahidamod" : "Nahida's Mod",
-    "item.nahidamod.nahida_ingot" : "Nahida Ingot",
+    "item.nahidamod.aurora_ingot" : "Aurora Ingot",
     "item.nahidamod.nahida_sex" : "Nahida Sex",
-    "item.nahidamod.raw_nahida" : "Raw Nahida",
+    "item.nahidamod.raw_aurora" : "Raw Aurora",
     "item.nahidamod.sushi" : "Sushi",
-    "block.nahidamod.nahida_block" : "Nahida Block",
-    "block.nahidamod.nahida_ore" : "Nahida Ore"
+    "item.nahidamod.burning_paper" : "Burning Paper",
+    "block.nahidamod.aurora_block" : "Aurora Block",
+    "block.nahidamod.deepslate_aurora_ore" : "Deepslate Aurora Ore",
+    "block.nahidamod.aurora_ore" : "Aurora Ore"
 }
