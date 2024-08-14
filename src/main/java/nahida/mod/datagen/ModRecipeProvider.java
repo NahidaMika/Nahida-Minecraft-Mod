@@ -35,14 +35,6 @@ public class ModRecipeProvider extends FabricRecipeProvider {
         offerReversibleCompactingRecipes(exporter, RecipeCategory.BUILDING_BLOCKS, ModItems.AURORA_INGOT, 
                 RecipeCategory.DECORATIONS, ModBlocks.AURORA_BLOCK);
 
-        //ShapedRecipeJsonBuilder.create(RecipeCategory.MISC, ModBlocks.NAHIDA_BLOCK, 1)
-        //        .pattern("NNN")
-        //        .pattern("NNN")
-        //        .pattern("NNN")
-        //        .input('N', ModItems.NAHIDA_INGOT)
-        //        .criterion(hasItem(ModItems.NAHIDA_INGOT), conditionsFromItem(ModItems.NAHIDA_INGOT))
-        //        .offerTo(exporter, Identifier.tryParse(getRecipeName(ModBlocks.NAHIDA_BLOCK)));
-
         ShapedRecipeJsonBuilder.create(RecipeCategory.MISC, ModItems.BURNING_PAPER, 64)
         .pattern("AAA")
         .pattern("ACA")
