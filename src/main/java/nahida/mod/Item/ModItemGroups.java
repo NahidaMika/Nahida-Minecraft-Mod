@@ -26,7 +26,7 @@ public class ModItemGroups {
                 entries.add(ModBlocks.AURORA_BLOCK);
                 
                 
-                entries.add(ModItems.NAHIDA_SEX);
+                entries.add(ModItems.AURORA_CHUNK);
                 entries.add(ModItems.SUSHI);
                 entries.add(ModItems.BURNING_PAPER);
                 

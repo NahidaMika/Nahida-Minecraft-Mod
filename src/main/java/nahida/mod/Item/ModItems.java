@@ -23,7 +23,7 @@ public class ModItems {
     
     public static final Item AURORA_INGOT = registerItem("aurora_ingot", new Item(new Item.Settings()));
     public static final Item RAW_AURORA = registerItem("raw_aurora", new Item(new Item.Settings()));
-    public static final Item NAHIDA_SEX = registerItem("nahida_sex", new Item(new Item.Settings()));
+    public static final Item AURORA_CHUNK = registerItem("aurora_chunk", new Item(new Item.Settings().rarity(Rarity.EPIC)));
     public static final Item SUSHI = registerItem("sushi", new Item(new Item.Settings().food(ModFoodComponents.SUSHI).maxCount(16).rarity(Rarity.EPIC)));
     public static final Item BURNING_PAPER = registerItem("burning_paper", new Item(new Item.Settings()));
     public static final Item AURORA_PICKAXE = registerItem("aurora_pickaxe", new PickaxeItem(ModToolMaterial.AURORA, 2, 2f, new Item.Settings().rarity(Rarity.RARE).fireproof()));
@@ -33,6 +33,7 @@ public class ModItems {
     public static final Item AURORA_SWORD = registerItem("aurora_sword", new SwordItem(ModToolMaterial.AURORA, 9, 5f, new Item.Settings().rarity(Rarity.RARE).fireproof()));
     public static final Item KIRA_KILLER_MUSIC_DISC = registerItem("kira_killer_music_disc", new MusicDiscItem(20, ModSounds.KIRA_KILLER, new Item.Settings().maxCount(1).fireproof().rarity(Rarity.EPIC).food(ModFoodComponents.SUSHI), 253));
     
+
     private static void addItemsToFirstItemGroup(FabricItemGroupEntries entries) {
         entries.add(Items.STONE);
     }

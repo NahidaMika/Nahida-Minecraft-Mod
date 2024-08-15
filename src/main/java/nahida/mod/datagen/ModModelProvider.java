@@ -24,7 +24,7 @@ public class ModModelProvider extends FabricModelProvider {
     @Override
     public void generateItemModels(ItemModelGenerator itemModelGenerator) {
         itemModelGenerator.register(ModItems.AURORA_INGOT, Models.GENERATED);
-        itemModelGenerator.register(ModItems.NAHIDA_SEX, Models.GENERATED);
+        itemModelGenerator.register(ModItems.AURORA_CHUNK, Models.GENERATED);
         itemModelGenerator.register(ModItems.RAW_AURORA, Models.GENERATED);
         itemModelGenerator.register(ModItems.SUSHI, Models.HANDHELD);
         itemModelGenerator.register(ModItems.BURNING_PAPER, Models.GENERATED);
