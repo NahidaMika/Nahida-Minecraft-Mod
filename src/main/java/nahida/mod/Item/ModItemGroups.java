@@ -18,19 +18,25 @@ public class ModItemGroups {
             .displayName(Text.translatable("itemgroup.nahidamod"))
             .icon(() -> new ItemStack(ModItems.AURORA_INGOT))
             .entries((displayContext, entries) -> {
-                entries.add(ModItems.AURORA_INGOT);
                 entries.add(ModBlocks.AURORA_ORE);
-                entries.add(ModBlocks.AURORA_BLOCK);
+                entries.add(ModBlocks.DEEPSLATE_AURORA_ORE);
+                
                 entries.add(ModItems.RAW_AURORA);
+                entries.add(ModItems.AURORA_INGOT);
+                entries.add(ModBlocks.AURORA_BLOCK);
+                
+                
                 entries.add(ModItems.NAHIDA_SEX);
                 entries.add(ModItems.SUSHI);
                 entries.add(ModItems.BURNING_PAPER);
-                entries.add(ModBlocks.DEEPSLATE_AURORA_ORE);
-                entries.add(ModItems.AURORA_AXE);
-                entries.add(ModItems.AURORA_PICKAXE);
-                entries.add(ModItems.AURORA_HOE);
-                entries.add(ModItems.AURORA_SHOVEL);
+                
                 entries.add(ModItems.AURORA_SWORD);
+                entries.add(ModItems.AURORA_PICKAXE);
+                entries.add(ModItems.AURORA_AXE);
+                entries.add(ModItems.AURORA_SHOVEL);
+                entries.add(ModItems.AURORA_HOE);
+                
+                
                 entries.add(ModItems.KIRA_KILLER_MUSIC_DISC);
             })
             .build());

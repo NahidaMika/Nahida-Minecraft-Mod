@@ -5,24 +5,27 @@ import nahida.mod.sounds.ModSounds;
 import net.minecraft.block.AbstractBlock;
 import net.minecraft.block.Block;
 import net.minecraft.block.Blocks;
+import net.minecraft.block.ExperienceDroppingBlock;
 import net.minecraft.item.Item;
 import net.minecraft.registry.Registries;
 import net.minecraft.registry.Registry;
 import net.minecraft.sound.BlockSoundGroup;
 import net.minecraft.util.Identifier;
+import net.minecraft.util.math.intprovider.UniformIntProvider;
 import net.minecraft.item.BlockItem;
 
 public class ModBlocks {
 
     public static final Block AURORA_ORE = registerBlock("aurora_ore",
-         new Block(AbstractBlock.Settings.copy(Blocks.DIAMOND_ORE).sounds(BlockSoundGroup.NETHERITE)));
+         new ExperienceDroppingBlock(UniformIntProvider.create(5, 20),AbstractBlock.Settings.copy(Blocks.STONE).strength(3.0F,3.0F ).sounds(BlockSoundGroup.STONE)));
     
     public static final Block AURORA_BLOCK = registerBlock("aurora_block",
         new Block(AbstractBlock.Settings.copy(Blocks.DIAMOND_BLOCK).sounds(ModSounds.AURORA_BLOCK_SOUNDS)));
 
     public static final Block DEEPSLATE_AURORA_ORE = registerBlock("deepslate_aurora_ore",
-        new Block(AbstractBlock.Settings.copy(Blocks.DEEPSLATE_DIAMOND_ORE).sounds(BlockSoundGroup.DEEPSLATE)));
+        new ExperienceDroppingBlock(UniformIntProvider.create(5, 20), AbstractBlock.Settings.copy(Blocks.DEEPSLATE).strength(4.5F, 3.0F).sounds(BlockSoundGroup.DEEPSLATE)));
         
+    
 
     private static Block registerBlock(String name, Block block) {
         registerBlockItem(name, block);

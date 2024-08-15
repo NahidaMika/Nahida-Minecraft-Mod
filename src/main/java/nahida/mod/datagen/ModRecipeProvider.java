@@ -6,6 +6,7 @@ import net.fabricmc.fabric.api.datagen.v1.FabricDataOutput;
 import net.fabricmc.fabric.api.datagen.v1.provider.FabricRecipeProvider;
 import net.minecraft.data.server.recipe.RecipeExporter;
 import net.minecraft.data.server.recipe.ShapedRecipeJsonBuilder;
+import net.minecraft.data.server.recipe.ShapelessRecipeJsonBuilder;
 import net.minecraft.item.ItemConvertible;
 import net.minecraft.item.Items;
 import net.minecraft.recipe.book.RecipeCategory;
@@ -90,6 +91,8 @@ public class ModRecipeProvider extends FabricRecipeProvider {
         .criterion(hasItem(ModItems.AURORA_INGOT), conditionsFromItem(ModItems.AURORA_INGOT))
         .offerTo(exporter, Identifier.tryParse(getRecipeName(ModItems.AURORA_PICKAXE)));
 
+        //ShapelessRecipeJsonBuilder
+        
         }
 
 };
