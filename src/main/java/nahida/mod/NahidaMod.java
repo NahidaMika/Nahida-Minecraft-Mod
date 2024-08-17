@@ -14,6 +14,7 @@ import nahida.mod.blocks.ModBlocks;
 import nahida.mod.enchant.SmeltingEnchantment;
 import nahida.mod.sounds.ModSounds;
 import nahida.mod.util.ModCustomTrades;
+import nahida.mod.world.gen.ModWorldGeneration;
 
 public class NahidaMod implements ModInitializer {
 	// This logger is used to write text to the console and the log file.
@@ -43,13 +44,8 @@ public class NahidaMod implements ModInitializer {
 		ModSounds.registerSounds();
 		LOGGER.info("Initializing the register of custom enchat (Smelting) of " + NahidaMod.MOD_ID );
 		SmeltingEnchantment.registerSmeltingEnchantment();
+		LOGGER.info("Initializing the register of custom ore generatio of " + NahidaMod.MOD_ID );
+		ModWorldGeneration.generateModWorldGen();
 		
-		//LootTableEvents.MODIFY.register(key, tableBuilder, source) -> {
-        //    if (source.isBuiltin() && key.getValue().getPath().startsWith("blocks/")) {
-        //        tableBuilder.apply(FurnaceSmeltLootFunction.builder()
-        //                .conditionally(MatchToolLootCondition.builder(ItemPredicate.Builder.create().subPredicate(ItemSubPredicateTypes.ENCHANTMENTS,
-        //                        EnchantmentsPredicate.enchantments(Collections.singletonList(new EnchantmentPredicate(SmeltingEnchantment.SMELTING, NumberRange.IntRange.atLeast(1))))))));	
-		//	}
-		//});
 	}
 }

@@ -61,5 +61,6 @@ public void configure(RegistryWrapper.WrapperLookup arg) {
         getOrCreateTagBuilder(TagKey.of(RegistryKeys.BLOCK, new Identifier("fabric", "needs_tool_level_5")))
                 .add(Blocks.BEDROCK)
                 .add(ModBlocks.AURORA_BLOCK);
+        
     }
 }

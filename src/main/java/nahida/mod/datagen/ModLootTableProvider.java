@@ -40,7 +40,7 @@ public class ModLootTableProvider extends FabricBlockLootTableProvider {
                 (LootPoolEntry.Builder<?>)this.applyExplosionDecay(
                         drop,
                         ItemEntry.builder(item)
-                                .apply(SetCountLootFunction.builder(UniformLootNumberProvider.create(1.0F, 5.0F)))
+                                .apply(SetCountLootFunction.builder(UniformLootNumberProvider.create(1.0F, 1.0F)))
                                 .apply(ApplyBonusLootFunction.oreDrops(Enchantments.FORTUNE))
                 )
         );

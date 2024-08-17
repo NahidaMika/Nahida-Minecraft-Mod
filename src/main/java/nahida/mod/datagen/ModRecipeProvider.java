@@ -111,7 +111,7 @@ public class ModRecipeProvider extends FabricRecipeProvider {
         .pattern("AAA")
         .pattern("ABA")
         .pattern("AAA")
-        .input('B', ModItems.AURORA_CHUNK)
+        .input('B', ModBlocks.AURORA_BLOCK)
         .input('A', ModItems.AURORA_INGOT)
         .criterion(hasItem(ModItems.AURORA_INGOT), conditionsFromItem(ModItems.AURORA_INGOT))
         .criterion(hasItem(ModBlocks.AURORA_BLOCK), conditionsFromItem(ModBlocks.AURORA_BLOCK))
