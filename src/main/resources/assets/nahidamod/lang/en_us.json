@@ -7,6 +7,7 @@
     "item.nahidamod.aurora_shovel" : "Aurora Shovel",
     "item.nahidamod.aurora_sword" : "Aurora Sword",   
     "item.nahidamod.nahida_sex" : "Nahida Sex",
+    "item.nahidamod.aurora_chunk" : "Aurora Chunk",
     "item.nahidamod.kira_killer_music_disc" : "Kira Killer Music Disc",
     "item.nahidamod.kira_killer_music_disc.desc" : "ずっと真夜中でいいのに。ft.Mori Calliope - Kira Killer",
     "item.nahidamod.raw_aurora" : "Raw Aurora",
@@ -14,5 +15,7 @@
     "item.nahidamod.burning_paper" : "Burning Paper",
     "block.nahidamod.aurora_block" : "Aurora Block",
     "block.nahidamod.deepslate_aurora_ore" : "Deepslate Aurora Ore",
-    "block.nahidamod.aurora_ore" : "Aurora Ore"
+    "block.nahidamod.aurora_ore" : "Aurora Ore",
+    "enchantment.nahidamod.smelting" : "Smelting",
+    "enchantment.nahidamod.smelting.desc" : "Automaticly Smelts"
 }

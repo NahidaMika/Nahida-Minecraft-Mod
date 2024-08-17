@@ -26,15 +26,6 @@ public class ModCustomTrades {
                 6,10,0.05f
 
             ));
-        });  
-        TradeOfferHelper.registerWanderingTraderOffers(2, 
-        factories -> {
-            factories.add((entity, random) -> new TradeOffer(
-                new ItemStack(Items.EMERALD, 32),
-                new ItemStack(ModItems.AURORA_CHUNK, 1),
-                1,60,0.05f
-
-            ));
-        });           
+        });             
     }
 }

@@ -3,7 +3,6 @@ package nahida.mod.Item;
 import nahida.mod.NahidaMod;
 import net.fabricmc.fabric.api.itemgroup.v1.FabricItemGroupEntries;
 import net.fabricmc.fabric.api.itemgroup.v1.ItemGroupEvents;
-import net.minecraft.item.Items;
 import net.minecraft.item.MusicDiscItem;
 import net.minecraft.item.PickaxeItem;
 import net.minecraft.item.ShovelItem;
@@ -16,6 +15,7 @@ import net.minecraft.item.AxeItem;
 import net.minecraft.item.HoeItem;
 import net.minecraft.item.Item;
 import net.minecraft.item.ItemGroups;
+import nahida.mod.Item.Custom.MetalDetectorItem;
 import nahida.mod.Item.Custom.ModToolMaterial;
 import nahida.mod.sounds.ModSounds;
 
@@ -32,15 +32,15 @@ public class ModItems {
     public static final Item AURORA_SHOVEL = registerItem("aurora_shovel", new ShovelItem(ModToolMaterial.AURORA, 1, 2f, new Item.Settings().rarity(Rarity.RARE).fireproof()));
     public static final Item AURORA_SWORD = registerItem("aurora_sword", new SwordItem(ModToolMaterial.AURORA, 9, 5f, new Item.Settings().rarity(Rarity.RARE).fireproof()));
     public static final Item KIRA_KILLER_MUSIC_DISC = registerItem("kira_killer_music_disc", new MusicDiscItem(20, ModSounds.KIRA_KILLER, new Item.Settings().maxCount(1).fireproof().rarity(Rarity.EPIC).food(ModFoodComponents.SUSHI), 253));
-    
+    public static final Item METAL_DETECTOR = registerItem("metal_detector", new MetalDetectorItem(new Item.Settings().fireproof().rarity(Rarity.EPIC)));
 
     private static void addItemsToFirstItemGroup(FabricItemGroupEntries entries) {
-        entries.add(Items.STONE);
+        entries.add(AURORA_INGOT);
     }
     private static Item registerItem(String name, Item item) {
         return Registry.register(Registries.ITEM,Identifier.tryParse(NahidaMod.MOD_ID + ":" + name), item);
     }
-    public static void RegisterModItems() {
+        public static void RegisterModItems() {
 
         ItemGroupEvents.modifyEntriesEvent(ItemGroups.INGREDIENTS).register(ModItems::addItemsToFirstItemGroup); 
     }

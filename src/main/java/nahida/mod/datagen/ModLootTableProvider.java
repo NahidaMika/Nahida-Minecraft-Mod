@@ -2,17 +2,23 @@ package nahida.mod.datagen;
 
 import nahida.mod.Item.ModItems;
 import nahida.mod.blocks.ModBlocks;
+
 import net.fabricmc.fabric.api.datagen.v1.FabricDataOutput;
 import net.fabricmc.fabric.api.datagen.v1.provider.FabricBlockLootTableProvider;
+
 import net.minecraft.block.Block;
 import net.minecraft.enchantment.Enchantments;
 import net.minecraft.item.Item;
 import net.minecraft.loot.LootTable;
+
 import net.minecraft.loot.entry.ItemEntry;
 import net.minecraft.loot.entry.LootPoolEntry;
 import net.minecraft.loot.function.ApplyBonusLootFunction;
+
 import net.minecraft.loot.function.SetCountLootFunction;
 import net.minecraft.loot.provider.number.UniformLootNumberProvider;
+
+
 
 public class ModLootTableProvider extends FabricBlockLootTableProvider {
 
@@ -25,6 +31,7 @@ public class ModLootTableProvider extends FabricBlockLootTableProvider {
         addDrop(ModBlocks.AURORA_ORE, oreDrops(ModBlocks.AURORA_ORE, ModItems.RAW_AURORA));
         addDrop(ModBlocks.DEEPSLATE_AURORA_ORE, oreDrops(ModBlocks.DEEPSLATE_AURORA_ORE, ModItems.RAW_AURORA));
         addDrop(ModBlocks.AURORA_BLOCK);
+        
     }
 
     public LootTable.Builder oreDrops(Block drop, Item item) {
@@ -38,6 +45,9 @@ public class ModLootTableProvider extends FabricBlockLootTableProvider {
                 )
         );
     }
+
 }
+
+
 
 

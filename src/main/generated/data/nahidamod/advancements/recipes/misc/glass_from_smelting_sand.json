@@ -1,24 +1,12 @@
 {
   "parent": "minecraft:recipes/root",
   "criteria": {
-    "has_aurora_chunk": {
+    "has_sand": {
       "conditions": {
         "items": [
           {
             "items": [
-              "nahidamod:aurora_chunk"
-            ]
-          }
-        ]
-      },
-      "trigger": "minecraft:inventory_changed"
-    },
-    "has_aurora_ingot": {
-      "conditions": {
-        "items": [
-          {
-            "items": [
-              "nahidamod:aurora_ingot"
+              "minecraft:sand"
             ]
           }
         ]
@@ -27,7 +15,7 @@
     },
     "has_the_recipe": {
       "conditions": {
-        "recipe": "minecraft:aurora_pickaxe"
+        "recipe": "minecraft:glass_from_smelting_sand"
       },
       "trigger": "minecraft:recipe_unlocked"
     }
@@ -35,13 +23,12 @@
   "requirements": [
     [
       "has_the_recipe",
-      "has_aurora_ingot",
-      "has_aurora_chunk"
+      "has_sand"
     ]
   ],
   "rewards": {
     "recipes": [
-      "minecraft:aurora_pickaxe"
+      "minecraft:glass_from_smelting_sand"
     ]
   }
 }

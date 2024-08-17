@@ -16,6 +16,7 @@ import java.util.List;
 public class ModRecipeProvider extends FabricRecipeProvider {
 
     public static final List<ItemConvertible> OUR_SMELTABLES = List.of(ModItems.RAW_AURORA);
+    public static final List<ItemConvertible> SAND_BLASTABLE = List.of(Items.SAND);
 
 
     public ModRecipeProvider(FabricDataOutput output) {
@@ -29,8 +30,14 @@ public class ModRecipeProvider extends FabricRecipeProvider {
         offerSmelting(exporter, OUR_SMELTABLES, RecipeCategory.MISC, ModItems.AURORA_INGOT,
         2.5f, 200, "nahida_ingot");
 
+        offerSmelting(exporter, SAND_BLASTABLE, RecipeCategory.MISC, Items.GLASS,
+        2.5F, 150, "glass");
+
         offerBlasting(exporter, OUR_SMELTABLES, RecipeCategory.MISC, ModItems.AURORA_INGOT,
         2.5f, 100, "nahida_ingot");
+
+        offerBlasting(exporter, SAND_BLASTABLE, RecipeCategory.MISC, Items.GLASS,
+         2.5F, 75, "glass");
 
         offerReversibleCompactingRecipes(exporter, RecipeCategory.BUILDING_BLOCKS, ModItems.AURORA_INGOT, 
                 RecipeCategory.DECORATIONS, ModBlocks.AURORA_BLOCK);
@@ -53,6 +60,7 @@ public class ModRecipeProvider extends FabricRecipeProvider {
         .input('K', ModItems.AURORA_CHUNK)
         .input('A', ModItems.AURORA_INGOT)
         .criterion(hasItem(ModItems.AURORA_INGOT), conditionsFromItem(ModItems.AURORA_INGOT))
+        .criterion(hasItem(ModItems.AURORA_CHUNK), conditionsFromItem(ModItems.AURORA_CHUNK))
         .offerTo(exporter, Identifier.tryParse(getRecipeName(ModItems.AURORA_SWORD)));
 
         ShapedRecipeJsonBuilder.create(RecipeCategory.MISC, ModItems.AURORA_SHOVEL, 1)
@@ -63,6 +71,7 @@ public class ModRecipeProvider extends FabricRecipeProvider {
         .input('K', ModItems.AURORA_CHUNK)
         .input('A', ModItems.AURORA_INGOT)
         .criterion(hasItem(ModItems.AURORA_INGOT), conditionsFromItem(ModItems.AURORA_INGOT))
+        .criterion(hasItem(ModItems.AURORA_CHUNK), conditionsFromItem(ModItems.AURORA_CHUNK))
         .offerTo(exporter, Identifier.tryParse(getRecipeName(ModItems.AURORA_SHOVEL)));
 
         ShapedRecipeJsonBuilder.create(RecipeCategory.MISC, ModItems.AURORA_HOE, 1)
@@ -73,6 +82,7 @@ public class ModRecipeProvider extends FabricRecipeProvider {
         .input('K', ModItems.AURORA_CHUNK)
         .input('A', ModItems.AURORA_INGOT)
         .criterion(hasItem(ModItems.AURORA_INGOT), conditionsFromItem(ModItems.AURORA_INGOT))
+        .criterion(hasItem(ModItems.AURORA_CHUNK), conditionsFromItem(ModItems.AURORA_CHUNK))
         .offerTo(exporter, Identifier.tryParse(getRecipeName(ModItems.AURORA_HOE)));
 
         ShapedRecipeJsonBuilder.create(RecipeCategory.MISC, ModItems.AURORA_AXE, 1)
@@ -83,6 +93,7 @@ public class ModRecipeProvider extends FabricRecipeProvider {
         .input('K', ModItems.AURORA_CHUNK)
         .input('A', ModItems.AURORA_INGOT)
         .criterion(hasItem(ModItems.AURORA_INGOT), conditionsFromItem(ModItems.AURORA_INGOT))
+        .criterion(hasItem(ModItems.AURORA_CHUNK), conditionsFromItem(ModItems.AURORA_CHUNK))
         .offerTo(exporter, Identifier.tryParse(getRecipeName(ModItems.AURORA_AXE)));
 
         ShapedRecipeJsonBuilder.create(RecipeCategory.MISC, ModItems.AURORA_PICKAXE, 1)
@@ -93,8 +104,20 @@ public class ModRecipeProvider extends FabricRecipeProvider {
         .input('K', ModItems.AURORA_CHUNK)
         .input('A', ModItems.AURORA_INGOT)
         .criterion(hasItem(ModItems.AURORA_INGOT), conditionsFromItem(ModItems.AURORA_INGOT))
+        .criterion(hasItem(ModItems.AURORA_CHUNK), conditionsFromItem(ModItems.AURORA_CHUNK))
         .offerTo(exporter, Identifier.tryParse(getRecipeName(ModItems.AURORA_PICKAXE)));
 
+        ShapedRecipeJsonBuilder.create(RecipeCategory.MISC, ModItems.AURORA_CHUNK, 1)
+        .pattern("AAA")
+        .pattern("ABA")
+        .pattern("AAA")
+        .input('B', ModItems.AURORA_CHUNK)
+        .input('A', ModItems.AURORA_INGOT)
+        .criterion(hasItem(ModItems.AURORA_INGOT), conditionsFromItem(ModItems.AURORA_INGOT))
+        .criterion(hasItem(ModBlocks.AURORA_BLOCK), conditionsFromItem(ModBlocks.AURORA_BLOCK))
+        .offerTo(exporter, Identifier.tryParse(getRecipeName(ModItems.AURORA_CHUNK)));
+        
+        
         //ShapelessRecipeJsonBuilder
         
         }

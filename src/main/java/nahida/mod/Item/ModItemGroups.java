@@ -16,7 +16,7 @@ public class ModItemGroups {
     Identifier.tryParse(NahidaMod.MOD_ID + ":" + "nahidamod_itemgroup"),
     FabricItemGroup.builder()
             .displayName(Text.translatable("itemgroup.nahidamod"))
-            .icon(() -> new ItemStack(ModItems.AURORA_INGOT))
+            .icon(() -> new ItemStack(ModItems.AURORA_SWORD))
             .entries((displayContext, entries) -> {
                 entries.add(ModBlocks.AURORA_ORE);
                 entries.add(ModBlocks.DEEPSLATE_AURORA_ORE);

@@ -3,7 +3,8 @@
 	"package": "nahida.mod.mixin",
 	"compatibilityLevel": "JAVA_17",
 	"mixins": [
-		"ExampleMixin"
+		"ExampleMixin",
+		"BlockMixin"
 	],
 	"injectors": {
 		"defaultRequire": 1

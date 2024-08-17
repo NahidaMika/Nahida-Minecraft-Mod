@@ -5,12 +5,15 @@
     "A": {
       "item": "nahidamod:aurora_ingot"
     },
+    "K": {
+      "item": "nahidamod:aurora_chunk"
+    },
     "S": {
       "item": "minecraft:stick"
     }
   },
   "pattern": [
-    "AA ",
+    "AK ",
     " S ",
     " S "
   ],

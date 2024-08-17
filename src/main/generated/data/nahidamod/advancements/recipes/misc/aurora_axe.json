@@ -1,6 +1,18 @@
 {
   "parent": "minecraft:recipes/root",
   "criteria": {
+    "has_aurora_chunk": {
+      "conditions": {
+        "items": [
+          {
+            "items": [
+              "nahidamod:aurora_chunk"
+            ]
+          }
+        ]
+      },
+      "trigger": "minecraft:inventory_changed"
+    },
     "has_aurora_ingot": {
       "conditions": {
         "items": [
@@ -23,7 +35,8 @@
   "requirements": [
     [
       "has_the_recipe",
-      "has_aurora_ingot"
+      "has_aurora_ingot",
+      "has_aurora_chunk"
     ]
   ],
   "rewards": {

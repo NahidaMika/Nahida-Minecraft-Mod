@@ -7,8 +7,11 @@ import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 
 import nahida.mod.Item.ModItemGroups;
+//import net.fabricmc.fabric.api.loot.v2.LootTableEvents;
+//import net.minecraft.registry.Registry;
 import nahida.mod.Item.ModItems;
 import nahida.mod.blocks.ModBlocks;
+import nahida.mod.enchant.SmeltingEnchantment;
 import nahida.mod.sounds.ModSounds;
 import nahida.mod.util.ModCustomTrades;
 
@@ -38,7 +41,15 @@ public class NahidaMod implements ModInitializer {
 		ModCustomTrades.registerCustomTrades();
 		LOGGER.info("Initializing the register of custom sound of " + NahidaMod.MOD_ID );
 		ModSounds.registerSounds();
-
+		LOGGER.info("Initializing the register of custom enchat (Smelting) of " + NahidaMod.MOD_ID );
+		SmeltingEnchantment.registerSmeltingEnchantment();
 		
+		//LootTableEvents.MODIFY.register(key, tableBuilder, source) -> {
+        //    if (source.isBuiltin() && key.getValue().getPath().startsWith("blocks/")) {
+        //        tableBuilder.apply(FurnaceSmeltLootFunction.builder()
+        //                .conditionally(MatchToolLootCondition.builder(ItemPredicate.Builder.create().subPredicate(ItemSubPredicateTypes.ENCHANTMENTS,
+        //                        EnchantmentsPredicate.enchantments(Collections.singletonList(new EnchantmentPredicate(SmeltingEnchantment.SMELTING, NumberRange.IntRange.atLeast(1))))))));	
+		//	}
+		//});
 	}
 }
