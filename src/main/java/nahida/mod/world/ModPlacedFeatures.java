@@ -23,7 +23,7 @@ public class ModPlacedFeatures {
         var configuredFeatureRegistryEntryLookup = context.getRegistryLookup(RegistryKeys.CONFIGURED_FEATURE);
 
         register(context, AURORA_ORE_PLACED_KEY, configuredFeatureRegistryEntryLookup.getOrThrow(ModConfigureFeatures.AURORA_ORE_KEY),
-        ModOrePlacement.modifiersWithCount(6, //veins pre chunk
+        ModOrePlacement.modifiersWithCount(12, //veins pre chunk
         HeightRangePlacementModifier.uniform(YOffset.fixed(-80), YOffset.fixed(80)))); // trapezoid make the center be the more ore spawn
     }
     

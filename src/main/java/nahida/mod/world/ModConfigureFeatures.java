@@ -29,7 +29,7 @@ public class ModConfigureFeatures {
             List.of(OreFeatureConfig.createTarget(stoneReplaceables, ModBlocks.AURORA_ORE.getDefaultState()),
                        OreFeatureConfig.createTarget(deepslateReplaceables, ModBlocks.DEEPSLATE_AURORA_ORE.getDefaultState()));
 
-        register(context, AURORA_ORE_KEY, Feature.ORE, new OreFeatureConfig(overworldAuroraOres, 6));
+        register(context, AURORA_ORE_KEY, Feature.ORE, new OreFeatureConfig(overworldAuroraOres, 8));
         
         
     }
