@@ -23,6 +23,7 @@ public class ModItemTagProvider extends FabricTagProvider.ItemTagProvider {
         getOrCreateTagBuilder(ItemTags.MUSIC_DISCS)
             .add(ModItems.KIRA_KILLER_MUSIC_DISC);
 
+
         
     }
 }

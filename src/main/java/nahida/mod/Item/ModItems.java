@@ -12,6 +12,7 @@ import net.minecraft.registry.Registry;
 import net.minecraft.util.Identifier;
 import net.minecraft.util.Rarity;
 import net.minecraft.item.AxeItem;
+import net.minecraft.item.BowItem;
 import net.minecraft.item.HoeItem;
 import net.minecraft.item.Item;
 import net.minecraft.item.ItemGroups;
@@ -31,8 +32,10 @@ public class ModItems {
     public static final Item AURORA_HOE = registerItem("aurora_hoe", new HoeItem(ModToolMaterial.AURORA, 0, 0f, new Item.Settings().rarity(Rarity.RARE).fireproof()));
     public static final Item AURORA_SHOVEL = registerItem("aurora_shovel", new ShovelItem(ModToolMaterial.AURORA, 1, 2f, new Item.Settings().rarity(Rarity.RARE).fireproof()));
     public static final Item AURORA_SWORD = registerItem("aurora_sword", new SwordItem(ModToolMaterial.AURORA, 9, 5f, new Item.Settings().rarity(Rarity.RARE).fireproof()));
-    public static final Item KIRA_KILLER_MUSIC_DISC = registerItem("kira_killer_music_disc", new MusicDiscItem(20, ModSounds.KIRA_KILLER, new Item.Settings().maxCount(1).fireproof().rarity(Rarity.EPIC).food(ModFoodComponents.SUSHI), 253));
-    public static final Item METAL_DETECTOR = registerItem("metal_detector", new MetalDetectorItem(new Item.Settings().fireproof().rarity(Rarity.EPIC)));
+    public static final Item KIRA_KILLER_MUSIC_DISC = registerItem("kira_killer_music_disc", new MusicDiscItem(20, ModSounds.KIRA_KILLER, new Item.Settings().maxCount(1).fireproof().rarity(Rarity.EPIC), 253));
+    public static final Item METAL_DETECTOR = registerItem("metal_detector", new MetalDetectorItem(new Item.Settings().fireproof().rarity(Rarity.EPIC).maxCount(1)));
+    public static final Item MISTSPLITTER_REFORGED = registerItem("mistsplitter_reforged", new SwordItem(ModToolMaterial.AURORA, 12, 8F, new Item.Settings().maxCount(1).rarity(Rarity.EPIC).fireproof()));
+    public static final Item BOWS = registerItem("bows", new BowItem(new Item.Settings().maxCount(1).rarity(Rarity.EPIC).fireproof()));
 
     private static void addItemsToFirstItemGroup(FabricItemGroupEntries entries) {
         entries.add(AURORA_INGOT);

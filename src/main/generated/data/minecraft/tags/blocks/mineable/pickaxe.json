@@ -4,6 +4,7 @@
     "minecraft:bedrock",
     "nahidamod:aurora_block",
     "nahidamod:aurora_ore",
-    "nahidamod:deepslate_aurora_ore"
+    "nahidamod:deepslate_aurora_ore",
+    "nahidamod:sound_block"
   ]
 }

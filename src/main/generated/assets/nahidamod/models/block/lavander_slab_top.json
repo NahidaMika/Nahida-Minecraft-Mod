@@ -1,0 +1,8 @@
+{
+  "parent": "minecraft:block/slab_top",
+  "textures": {
+    "bottom": "nahidamod:block/lavander_planks",
+    "side": "nahidamod:block/lavander_planks",
+    "top": "nahidamod:block/lavander_planks"
+  }
+}

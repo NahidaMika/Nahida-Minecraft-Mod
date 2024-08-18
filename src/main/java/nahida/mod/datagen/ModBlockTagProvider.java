@@ -12,55 +12,61 @@ import net.minecraft.util.Identifier;
 import java.util.concurrent.CompletableFuture;
 
 import nahida.mod.blocks.ModBlocks;
+import nahida.mod.util.ModTags;
 
 public class ModBlockTagProvider extends FabricTagProvider.BlockTagProvider {
-    public ModBlockTagProvider(FabricDataOutput output, CompletableFuture<RegistryWrapper.WrapperLookup> registriesFuture) {
+        public ModBlockTagProvider(FabricDataOutput output, CompletableFuture<RegistryWrapper.WrapperLookup> registriesFuture) {
         super(output, registriesFuture);
-    }
+        }
 
-    @Override
-public void configure(RegistryWrapper.WrapperLookup arg) {
+        @Override
+        public void configure(RegistryWrapper.WrapperLookup arg) {
+        
         getOrCreateTagBuilder(BlockTags.PICKAXE_MINEABLE)
                 .add(Blocks.BEDROCK)
                 .add(ModBlocks.AURORA_BLOCK)
                 .add(ModBlocks.AURORA_ORE)
-                .add(ModBlocks.DEEPSLATE_AURORA_ORE);
+                .add(ModBlocks.DEEPSLATE_AURORA_ORE)
+                .add(ModBlocks.SOUND_BLOCK);
 
-        getOrCreateTagBuilder(BlockTags.NEEDS_STONE_TOOL) 
-                .add(Blocks.BEDROCK);
 
         getOrCreateTagBuilder(BlockTags.CLIMBABLE)
-                .add(Blocks.BAMBOO)
-                .add(Blocks.OAK_LOG)
-                .add(Blocks.BIRCH_LOG)
-                .add(Blocks.SPRUCE_LOG)
-                .add(Blocks.JUNGLE_LOG)
-                .add(Blocks.ACACIA_LOG)
-                .add(Blocks.DARK_OAK_LOG)
-                .add(Blocks.CHERRY_LOG)
-                .add(Blocks.MANGROVE_ROOTS)
-                .add(Blocks.MANGROVE_LOG)
-                .add(Blocks.BAMBOO_BLOCK)
-                .add(Blocks.MUDDY_MANGROVE_ROOTS)
-                .add(Blocks.STRIPPED_OAK_LOG)
-                .add(Blocks.STRIPPED_BIRCH_LOG)
-                .add(Blocks.STRIPPED_SPRUCE_LOG)
-                .add(Blocks.STRIPPED_JUNGLE_LOG)
-                .add(Blocks.STRIPPED_ACACIA_LOG)
-                .add(Blocks.STRIPPED_DARK_OAK_LOG)
-                .add(Blocks.STRIPPED_CHERRY_LOG)
-                .add(Blocks.STRIPPED_MANGROVE_LOG)
-                .add(Blocks.STRIPPED_BAMBOO_BLOCK);
-                
-        getOrCreateTagBuilder(BlockTags.AXE_MINEABLE)
-                .add(Blocks.BEDROCK);
-
-        getOrCreateTagBuilder(BlockTags.HOE_MINEABLE)
-                .add(Blocks.BEDROCK);
+                .add(Blocks.BAMBOO);
 
         getOrCreateTagBuilder(TagKey.of(RegistryKeys.BLOCK, new Identifier("fabric", "needs_tool_level_5")))
                 .add(Blocks.BEDROCK)
-                .add(ModBlocks.AURORA_BLOCK);
+                .add(ModBlocks.AURORA_BLOCK)
+                .add(ModBlocks.SOUND_BLOCK);
+
+        getOrCreateTagBuilder(ModTags.Blocks.METAL_DETECTOR_DETECTABLE_BLOCKS)
+                .add(Blocks.ANCIENT_DEBRIS)
+                .add(Blocks.NETHER_GOLD_ORE)
+                .forceAddTag(BlockTags.GOLD_ORES)
+                .forceAddTag(BlockTags.GOLD_ORES)
+                .forceAddTag(BlockTags.DIAMOND_ORES)
+                .forceAddTag(BlockTags.LAPIS_ORES)
+                .forceAddTag(BlockTags.IRON_ORES)
+                .forceAddTag(BlockTags.REDSTONE_ORES)
+                .forceAddTag(BlockTags.COPPER_ORES)
+                .forceAddTag(BlockTags.COAL_ORES)
+                .forceAddTag(BlockTags.EMERALD_ORES)
+                .forceAddTag(ModTags.Blocks.AURORA_ORES);  
+                
+
+        getOrCreateTagBuilder(ModTags.Blocks.AURORA_ORES)
+                .add(ModBlocks.AURORA_ORE)
+                .add(ModBlocks.DEEPSLATE_AURORA_ORE);
+
+        getOrCreateTagBuilder(BlockTags.FENCES)
+                .add(ModBlocks.LAVANDER_FENCE);
         
-    }
+        getOrCreateTagBuilder(BlockTags.FENCE_GATES)
+                .add(ModBlocks.LAVANDER_FENCE_GATE);
+        
+        getOrCreateTagBuilder(BlockTags.WALLS)
+                .add(ModBlocks.LAVANDER_WALL);
+
+        getOrCreateTagBuilder(BlockTags.PLANKS)
+                .add(ModBlocks.LAVANDER_PLANKS);
+        }
 }

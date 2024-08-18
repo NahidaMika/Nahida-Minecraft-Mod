@@ -29,6 +29,7 @@ public class ModItemGroups {
                 entries.add(ModItems.AURORA_CHUNK);
                 entries.add(ModItems.SUSHI);
                 entries.add(ModItems.BURNING_PAPER);
+                entries.add(ModBlocks.SOUND_BLOCK);
                 
                 entries.add(ModItems.AURORA_SWORD);
                 entries.add(ModItems.AURORA_PICKAXE);
@@ -38,6 +39,18 @@ public class ModItemGroups {
                 
                 
                 entries.add(ModItems.KIRA_KILLER_MUSIC_DISC);
+                entries.add(ModItems.METAL_DETECTOR);
+
+                entries.add(ModBlocks.LAVANDER_PLANKS);
+                entries.add(ModBlocks.LAVANDER_BUTTON);
+                entries.add(ModBlocks.LAVANDER_DOOR);
+                entries.add(ModBlocks.LAVANDER_FENCE);
+                entries.add(ModBlocks.LAVANDER_FENCE_GATE);
+                entries.add(ModBlocks.LAVANDER_PRESSURE_PLATE);
+                entries.add(ModBlocks.LAVANDER_SLAB);
+                entries.add(ModBlocks.LAVANDER_STAIRS);
+                entries.add(ModBlocks.LAVANDER_TRAPDOOR);
+                entries.add(ModBlocks.LAVANDER_WALL);
             })
             .build());
     public static void RegisterItemGroups() { 

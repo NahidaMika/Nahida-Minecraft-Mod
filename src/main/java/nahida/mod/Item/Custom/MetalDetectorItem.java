@@ -1,17 +1,20 @@
 package nahida.mod.Item.Custom;
 
 
-import nahida.mod.blocks.ModBlocks;
+import java.util.List;
+
+import nahida.mod.util.ModTags;
 import net.minecraft.block.Block;
 import net.minecraft.block.BlockState;
-import net.minecraft.block.Blocks;
+import net.minecraft.client.item.TooltipContext;
 import net.minecraft.entity.player.PlayerEntity;
 import net.minecraft.item.Item;
-
+import net.minecraft.item.ItemStack;
 import net.minecraft.item.ItemUsageContext;
 import net.minecraft.text.Text;
 import net.minecraft.util.ActionResult;
 import net.minecraft.util.math.BlockPos;
+import net.minecraft.world.World;
 
 public class MetalDetectorItem extends Item{
 
@@ -35,16 +38,15 @@ public class MetalDetectorItem extends Item{
                     
                     break;
                 }
-                if(!foundBlock) {
-                    player.sendMessage(Text.literal("No Valuables Found!"));
-
-                    break;
-                    }
             }
-            context.getStack().damage(1, context.getPlayer(), 
-                    playerEntity -> playerEntity.sendToolBreakStatus(playerEntity.getActiveHand()));
-        
-        }        
+
+            if(!foundBlock) {
+                player.sendMessage(Text.literal("No Valuables Found!"));
+            }
+        }
+        context.getStack().damage(1, context.getPlayer(), 
+                playerEntity -> playerEntity.sendToolBreakStatus(playerEntity.getActiveHand()));
+                  
         return ActionResult.SUCCESS;
         
     }
@@ -53,6 +55,14 @@ public class MetalDetectorItem extends Item{
     }
 
     private boolean isValuableBlock(BlockState state) {
-        return state.isOf(Blocks.IRON_ORE) || state.isOf(Blocks.DIAMOND_ORE) || state.isOf(ModBlocks.AURORA_ORE) || state.isOf(Blocks.ANCIENT_DEBRIS);
-}
+        return state.isIn(ModTags.Blocks.METAL_DETECTOR_DETECTABLE_BLOCKS);  
+    }
+
+    @Override
+    public void appendTooltip(ItemStack stack, World world, List<Text> tooltip, TooltipContext context) {
+        tooltip.add(Text.translatable("tooltip.nahidamod.metal_detector.tooltip"));
+        super.appendTooltip(stack, world, tooltip, context);
+    }
+    
+
 }

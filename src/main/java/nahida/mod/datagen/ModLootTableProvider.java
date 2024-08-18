@@ -32,6 +32,19 @@ public class ModLootTableProvider extends FabricBlockLootTableProvider {
         addDrop(ModBlocks.DEEPSLATE_AURORA_ORE, oreDrops(ModBlocks.DEEPSLATE_AURORA_ORE, ModItems.RAW_AURORA));
         addDrop(ModBlocks.AURORA_BLOCK);
         
+        addDrop(ModBlocks.LAVANDER_STAIRS);
+        addDrop(ModBlocks.LAVANDER_TRAPDOOR);
+        addDrop(ModBlocks.LAVANDER_WALL);
+        addDrop(ModBlocks.LAVANDER_FENCE);
+        addDrop(ModBlocks.LAVANDER_FENCE_GATE);
+        addDrop(ModBlocks.LAVANDER_BUTTON);
+        addDrop(ModBlocks.LAVANDER_PLANKS);
+        addDrop(ModBlocks.LAVANDER_PRESSURE_PLATE);
+        
+        addDrop(ModBlocks.LAVANDER_DOOR, doorDrops(ModBlocks.LAVANDER_DOOR));
+        addDrop(ModBlocks.LAVANDER_SLAB, slabDrops(ModBlocks.LAVANDER_SLAB));
+
+        
     }
 
     public LootTable.Builder oreDrops(Block drop, Item item) {

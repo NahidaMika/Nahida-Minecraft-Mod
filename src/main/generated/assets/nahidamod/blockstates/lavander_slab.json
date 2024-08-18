@@ -1,0 +1,13 @@
+{
+  "variants": {
+    "type=bottom": {
+      "model": "nahidamod:block/lavander_slab"
+    },
+    "type=double": {
+      "model": "nahidamod:block/lavander_planks"
+    },
+    "type=top": {
+      "model": "nahidamod:block/lavander_slab_top"
+    }
+  }
+}

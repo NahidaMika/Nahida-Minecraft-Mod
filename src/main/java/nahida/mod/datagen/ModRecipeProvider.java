@@ -4,10 +4,13 @@ import nahida.mod.Item.ModItems;
 import nahida.mod.blocks.ModBlocks;
 import net.fabricmc.fabric.api.datagen.v1.FabricDataOutput;
 import net.fabricmc.fabric.api.datagen.v1.provider.FabricRecipeProvider;
+import net.minecraft.block.Blocks;
 import net.minecraft.data.server.recipe.RecipeExporter;
 import net.minecraft.data.server.recipe.ShapedRecipeJsonBuilder;
+import net.minecraft.data.server.recipe.ShapelessRecipeJsonBuilder;
 import net.minecraft.item.ItemConvertible;
 import net.minecraft.item.Items;
+import net.minecraft.recipe.Ingredient;
 import net.minecraft.recipe.book.RecipeCategory;
 import net.minecraft.util.Identifier;
 
@@ -116,10 +119,55 @@ public class ModRecipeProvider extends FabricRecipeProvider {
         .criterion(hasItem(ModItems.AURORA_INGOT), conditionsFromItem(ModItems.AURORA_INGOT))
         .criterion(hasItem(ModBlocks.AURORA_BLOCK), conditionsFromItem(ModBlocks.AURORA_BLOCK))
         .offerTo(exporter, Identifier.tryParse(getRecipeName(ModItems.AURORA_CHUNK)));
+
+        ShapedRecipeJsonBuilder.create(RecipeCategory.MISC, ModItems.METAL_DETECTOR, 1)
+        .pattern("  S")
+        .pattern("IS ")
+        .pattern("RI ")
+        .input('S', Items.STICK)
+        .input('I', Items.IRON_INGOT)
+        .input('R', Items.REDSTONE)
+        .criterion(hasItem(Items.STICK), conditionsFromItem(Items.STICK))
+        .criterion(hasItem(Items.IRON_INGOT), conditionsFromItem(Items.IRON_INGOT))
+        .criterion(hasItem(Items.REDSTONE), conditionsFromItem(Items.REDSTONE))
+        .offerTo(exporter, Identifier.tryParse(getRecipeName(ModItems.METAL_DETECTOR)));
         
+        ShapelessRecipeJsonBuilder.create(RecipeCategory.MISC, ModBlocks.LAVANDER_BUTTON)
+            .input(ModBlocks.LAVANDER_PLANKS)
+            .criterion(hasItem(ModBlocks.LAVANDER_PLANKS), conditionsFromItem(ModBlocks.LAVANDER_PLANKS))
+            .offerTo(exporter, Identifier.tryParse(getRecipeName(ModBlocks.LAVANDER_BUTTON)));
+
+        offerPressurePlateRecipe(exporter, ModBlocks.LAVANDER_PRESSURE_PLATE, ModBlocks.LAVANDER_PLANKS);
+        offerSlabRecipe(exporter, RecipeCategory.MISC, ModBlocks.LAVANDER_SLAB, ModBlocks.LAVANDER_PLANKS);
+        //offerWallRecipe(exporter, RecipeCategory.MISC, ModBlocks.LAVANDER_WALL, ModBlocks.LAVANDER_PLANKS);
         
-        //ShapelessRecipeJsonBuilder
+        createStairsRecipe(ModBlocks.LAVANDER_STAIRS, Ingredient.ofItems(ModBlocks.LAVANDER_PLANKS))
+            .criterion(hasItem(ModBlocks.LAVANDER_PLANKS), conditionsFromItem(ModBlocks.LAVANDER_PLANKS))
+            .offerTo(exporter, Identifier.tryParse(getRecipeName(ModBlocks.LAVANDER_STAIRS)));
         
+        createFenceRecipe(ModBlocks.LAVANDER_FENCE, Ingredient.ofItems(ModBlocks.LAVANDER_PLANKS))
+            .criterion(hasItem(ModBlocks.LAVANDER_PLANKS), conditionsFromItem(ModBlocks.LAVANDER_PLANKS))
+            .offerTo(exporter, Identifier.tryParse(getRecipeName(ModBlocks.LAVANDER_FENCE)));
+        
+        createFenceGateRecipe(ModBlocks.LAVANDER_FENCE_GATE, Ingredient.ofItems(ModBlocks.LAVANDER_PLANKS))
+            .criterion(hasItem(ModBlocks.LAVANDER_PLANKS), conditionsFromItem(ModBlocks.LAVANDER_PLANKS))
+            .offerTo(exporter, Identifier.tryParse(getRecipeName(ModBlocks.LAVANDER_FENCE_GATE)));
+        
+        createDoorRecipe(ModBlocks.LAVANDER_DOOR, Ingredient.ofItems(ModBlocks.LAVANDER_PLANKS))
+            .criterion(hasItem(ModBlocks.LAVANDER_PLANKS), conditionsFromItem(ModBlocks.LAVANDER_PLANKS))
+            .offerTo(exporter, Identifier.tryParse(getRecipeName(ModBlocks.LAVANDER_DOOR)));
+        
+        createTrapdoorRecipe(ModBlocks.LAVANDER_TRAPDOOR, Ingredient.ofItems(ModBlocks.LAVANDER_PLANKS))
+            .criterion(hasItem(ModBlocks.LAVANDER_PLANKS), conditionsFromItem(ModBlocks.LAVANDER_PLANKS))
+            .offerTo(exporter, Identifier.tryParse(getRecipeName(ModBlocks.LAVANDER_TRAPDOOR)));
+
+        ShapedRecipeJsonBuilder.create(RecipeCategory.MISC, Blocks.CRAFTING_TABLE)
+            .pattern("   ")
+            .pattern(" ##")
+            .pattern(" ##")
+            .input('#', ModBlocks.LAVANDER_PLANKS)
+            .criterion(hasItem(ModBlocks.LAVANDER_PLANKS), conditionsFromItem(ModBlocks.LAVANDER_PLANKS))
+            .offerTo(exporter, Identifier.tryParse(getRecipeName(Blocks.CRAFTING_TABLE)));
         }
 
 };

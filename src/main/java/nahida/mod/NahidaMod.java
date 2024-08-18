@@ -1,11 +1,11 @@
 package nahida.mod;
 
 import net.fabricmc.api.ModInitializer;
-import net.fabricmc.fabric.api.registry.FuelRegistry;
 
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 
+import nahida.mod.Item.ModFuelRegistry;
 import nahida.mod.Item.ModItemGroups;
 //import net.fabricmc.fabric.api.loot.v2.LootTableEvents;
 //import net.minecraft.registry.Registry;
@@ -37,7 +37,7 @@ public class NahidaMod implements ModInitializer {
 		ModItemGroups.RegisterItemGroups();
 		ModBlocks.registerModBlocks();
 		LOGGER.info("Initializing the register of fuel intances of " + NahidaMod.MOD_ID );
-		FuelRegistry.INSTANCE.add(ModItems.BURNING_PAPER, 200);
+		ModFuelRegistry.registerFuel(ModItems.BURNING_PAPER, 200);
 		LOGGER.info("Initializing the register of custom trades of " + NahidaMod.MOD_ID );
 		ModCustomTrades.registerCustomTrades();
 		LOGGER.info("Initializing the register of custom sound of " + NahidaMod.MOD_ID );

@@ -36,5 +36,13 @@
         "stream": true
       }
     ]
+  },
+  "truth_lies": {
+    "sounds": [
+      {
+        "name":"nahidamod:truth_lies",
+        "stream": true
+      }
+    ]
   }
 }

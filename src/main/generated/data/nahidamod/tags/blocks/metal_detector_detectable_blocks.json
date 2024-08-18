@@ -1,0 +1,17 @@
+{
+  "replace": false,
+  "values": [
+    "minecraft:ancient_debris",
+    "minecraft:nether_gold_ore",
+    "#minecraft:gold_ores",
+    "#minecraft:gold_ores",
+    "#minecraft:diamond_ores",
+    "#minecraft:lapis_ores",
+    "#minecraft:iron_ores",
+    "#minecraft:redstone_ores",
+    "#minecraft:copper_ores",
+    "#minecraft:coal_ores",
+    "#minecraft:emerald_ores",
+    "#nahidamod:aurora_ores"
+  ]
+}

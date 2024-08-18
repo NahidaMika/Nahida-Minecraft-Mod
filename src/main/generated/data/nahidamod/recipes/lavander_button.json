@@ -1,0 +1,12 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "category": "misc",
+  "ingredients": [
+    {
+      "item": "nahidamod:lavander_planks"
+    }
+  ],
+  "result": {
+    "item": "nahidamod:lavander_button"
+  }
+}

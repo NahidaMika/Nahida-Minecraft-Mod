@@ -21,6 +21,8 @@ public class ModSounds {
     
     public static final SoundEvent KIRA_KILLER = registerSoundEvent("kira_killer");
 
+    public static final SoundEvent TRUTH_LIES = registerSoundEvent("truth_lies");
+
     public static final BlockSoundGroup AURORA_BLOCK_SOUNDS = new BlockSoundGroup( 1f, 1f,
     ModSounds.AURORA_BLOCK_BREAK, ModSounds.AURORA_BLOCK_STEP, ModSounds.AURORA_BLOCK_PLACE,
     ModSounds.AURORA_BLOCK_HIT, ModSounds.AURORA_BLOCK_FALL);
