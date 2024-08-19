@@ -29,11 +29,11 @@ public class ModItems {
     public static final Item AURORA_CHUNK = registerItem("aurora_chunk", new Item(new Item.Settings().rarity(Rarity.EPIC)));
     public static final Item SUSHI = registerItem("sushi", new Item(new Item.Settings().food(ModFoodComponents.SUSHI).maxCount(16).rarity(Rarity.EPIC)));
     public static final Item BURNING_PAPER = registerItem("burning_paper", new Item(new Item.Settings()));
-    public static final Item AURORA_PICKAXE = registerItem("aurora_pickaxe", new PickaxeItem(ModToolMaterial.AURORA, 2, 2f, new Item.Settings().rarity(Rarity.RARE).fireproof()));
-    public static final Item AURORA_AXE = registerItem("aurora_axe", new AxeItem(ModToolMaterial.AURORA, 5, 5f, new Item.Settings().rarity(Rarity.RARE).fireproof()));
+    public static final Item AURORA_PICKAXE = registerItem("aurora_pickaxe", new PickaxeItem(ModToolMaterial.AURORA, 2, -1.4f, new Item.Settings().rarity(Rarity.RARE).fireproof()));
+    public static final Item AURORA_AXE = registerItem("aurora_axe", new AxeItem(ModToolMaterial.AURORA, 8F, -2f, new Item.Settings().rarity(Rarity.RARE).fireproof()));
     public static final Item AURORA_HOE = registerItem("aurora_hoe", new HoeItem(ModToolMaterial.AURORA, 0, 0f, new Item.Settings().rarity(Rarity.RARE).fireproof()));
-    public static final Item AURORA_SHOVEL = registerItem("aurora_shovel", new ShovelItem(ModToolMaterial.AURORA, 1, 2f, new Item.Settings().rarity(Rarity.RARE).fireproof()));
-    public static final Item AURORA_SWORD = registerItem("aurora_sword", new SwordItem(ModToolMaterial.AURORA, 9, 5f, new Item.Settings().rarity(Rarity.RARE).fireproof()));
+    public static final Item AURORA_SHOVEL = registerItem("aurora_shovel", new ShovelItem(ModToolMaterial.AURORA, 2.5F, -2.0F, new Item.Settings().rarity(Rarity.RARE).fireproof()));
+    public static final Item AURORA_SWORD = registerItem("aurora_sword", new SwordItem(ModToolMaterial.AURORA, 7, -1.2f, new Item.Settings().rarity(Rarity.RARE).fireproof()));
     public static final Item KIRA_KILLER_MUSIC_DISC = registerItem("kira_killer_music_disc", new MusicDiscItem(20, ModSounds.KIRA_KILLER, new Item.Settings().maxCount(1).fireproof().rarity(Rarity.EPIC), 253));
     public static final Item METAL_DETECTOR = registerItem("metal_detector", new MetalDetectorItem(new Item.Settings().fireproof().rarity(Rarity.EPIC).maxCount(1)));
     public static final Item MISTSPLITTER_REFORGED = registerItem("mistsplitter_reforged", new SwordItem(ModToolMaterial.AURORA, 12, 8F, new Item.Settings().maxCount(1).rarity(Rarity.EPIC).fireproof()));

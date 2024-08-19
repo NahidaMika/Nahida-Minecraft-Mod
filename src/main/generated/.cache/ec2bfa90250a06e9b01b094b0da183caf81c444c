@@ -1,4 +1,4 @@
-// 1.20.4	2024-08-18T19:09:04.2374173	Nahida Mod/Model Definitions
+// 1.20.4	2024-08-18T20:43:47.9201889	Nahida Mod/Model Definitions
 6b0dbb9cf3c55a2cc8ac75321156909af1870afb assets\nahidamod\models\item\aurora_chestplate_copper_trim.json
 838d35ee9c364baca87251fa0b49c3ccf83115aa assets\nahidamod\models\item\aurora_chestplate_diamond_trim.json
 d4bded7ee3341c152ca079d201f596a4ac3a4e34 assets\nahidamod\models\block\deepslate_aurora_ore.json
@@ -8,8 +8,8 @@ d4bded7ee3341c152ca079d201f596a4ac3a4e34 assets\nahidamod\models\block\deepslate
 be6d3b6af673e741e56a1fdef51dc734b9eac496 assets\nahidamod\models\item\aurora_boots_lapis_trim.json
 a9cfde5ef14dbcfb3f121366782f6805be05b753 assets\nahidamod\models\item\aurora_sword.json
 399415f4a4e6d03f2a40835b53b1eba861bb7679 assets\nahidamod\models\block\lavander_trapdoor_top.json
-d4a5c6b46dfe18af872c117786d74e08ef8fbc58 assets\nahidamod\models\item\kira_killer_music_disc.json
 c64d9b7b18c0eb2ce3cec1c65b2b55a0ba24ae61 assets\nahidamod\models\item\aurora_helmet_gold_trim.json
+d4a5c6b46dfe18af872c117786d74e08ef8fbc58 assets\nahidamod\models\item\kira_killer_music_disc.json
 22b65f717c6e92d69e6d14e7ba9aed6c88eb759a assets\nahidamod\models\block\lavander_pressure_plate.json
 395e4296302fed616d527b5d9e36a4009f32580c assets\nahidamod\models\block\aurora_ore.json
 a8d7d7e09f473e0a106958df4b96045bf725041c assets\nahidamod\blockstates\lavander_button.json

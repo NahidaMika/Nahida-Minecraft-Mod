@@ -12,8 +12,8 @@ import net.minecraft.sound.SoundEvents;
 import java.util.function.Supplier;
 
 public enum ModArmorMaterial implements ArmorMaterial{
-    AURORA("aurora",40, new int[]{ 3, 8, 6, 3},25,
-            SoundEvents.ITEM_ARMOR_EQUIP_NETHERITE, 4f,2F,
+    AURORA("aurora",40, new int[]{ 5, 10, 8, 5},25,
+            SoundEvents.ITEM_ARMOR_EQUIP_NETHERITE, 5F,.3F,
             () -> Ingredient.ofItems(ModItems.AURORA_INGOT))
     ; 
 

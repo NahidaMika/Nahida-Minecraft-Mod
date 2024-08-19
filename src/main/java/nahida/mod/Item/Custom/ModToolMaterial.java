@@ -6,7 +6,7 @@ import java.util.function.Supplier;
 import nahida.mod.Item.ModItems;
 
 public enum ModToolMaterial implements ToolMaterial {
-    AURORA(5, 3591, 10, 5, 25, 
+    AURORA(5, 3591, 12, 5, 25, 
     () -> Ingredient.ofItems(ModItems.AURORA_INGOT)); 
     
     private final int miningLevel;
