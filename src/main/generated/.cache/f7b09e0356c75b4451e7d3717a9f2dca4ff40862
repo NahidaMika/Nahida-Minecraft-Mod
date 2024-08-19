@@ -1,9 +1,9 @@
-// 1.20.4	2024-08-18T01:02:36.9540237	Nahida Mod/Block Loot Tables
+// 1.20.4	2024-08-18T19:09:04.2314322	Nahida Mod/Block Loot Tables
 399885e186aff5a4d6647fc8955a6dd7cb47f037 data\nahidamod\loot_tables\blocks\lavander_planks.json
 b0d23941cb75af021546297bfd9ec056911c94b7 data\nahidamod\loot_tables\blocks\lavander_pressure_plate.json
 bc933d3593898f2ed04414e9518467ad86521bdd data\nahidamod\loot_tables\blocks\deepslate_aurora_ore.json
-6f4c0483b4aa502bf33cb5bc587fc0fa73e7a13a data\nahidamod\loot_tables\blocks\lavander_button.json
 7c41612eeb8535d9123458aa3a0387c3085795f9 data\nahidamod\loot_tables\blocks\aurora_block.json
+6f4c0483b4aa502bf33cb5bc587fc0fa73e7a13a data\nahidamod\loot_tables\blocks\lavander_button.json
 20cdff518270bbd0c87f5c3a744f728ad272386e data\nahidamod\loot_tables\blocks\aurora_ore.json
 60f8f2f5ab414208af28322d1fb8b05f9dde6cc7 data\nahidamod\loot_tables\blocks\lavander_fence.json
 5eb1a733a373cbac5a28bf43056d8b9b339033c7 data\nahidamod\loot_tables\blocks\lavander_wall.json

@@ -7,6 +7,7 @@ import net.fabricmc.fabric.api.datagen.v1.provider.FabricModelProvider;
 import net.minecraft.data.client.BlockStateModelGenerator;
 import net.minecraft.data.client.ItemModelGenerator;
 import net.minecraft.data.client.Models;
+import net.minecraft.item.ArmorItem;
 
 public class ModModelProvider extends FabricModelProvider {
 
@@ -49,6 +50,12 @@ public class ModModelProvider extends FabricModelProvider {
         itemModelGenerator.register(ModItems.KIRA_KILLER_MUSIC_DISC, Models.GENERATED);
         itemModelGenerator.register(ModItems.METAL_DETECTOR, Models.HANDHELD);
         itemModelGenerator.register(ModItems.MISTSPLITTER_REFORGED, Models.HANDHELD);
+
+        itemModelGenerator.registerArmor(((ArmorItem) ModItems.AURORA_HELMET));
+        itemModelGenerator.registerArmor(((ArmorItem) ModItems.AURORA_CHESPLATE));
+        itemModelGenerator.registerArmor(((ArmorItem) ModItems.AURORA_LEGGINGS));
+        itemModelGenerator.registerArmor(((ArmorItem) ModItems.AURORA_BOOTS));
+
 
     }
 }

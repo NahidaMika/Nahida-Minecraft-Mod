@@ -36,6 +36,11 @@ public class ModItemGroups {
                 entries.add(ModItems.AURORA_AXE);
                 entries.add(ModItems.AURORA_SHOVEL);
                 entries.add(ModItems.AURORA_HOE);
+
+                entries.add(ModItems.AURORA_HELMET);
+                entries.add(ModItems.AURORA_CHESPLATE);
+                entries.add(ModItems.AURORA_LEGGINGS);
+                entries.add(ModItems.AURORA_BOOTS);
                 
                 
                 entries.add(ModItems.KIRA_KILLER_MUSIC_DISC);

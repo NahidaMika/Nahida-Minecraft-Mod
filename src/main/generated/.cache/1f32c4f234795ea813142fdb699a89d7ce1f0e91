@@ -1,8 +1,8 @@
-// 1.20.4	2024-08-18T01:02:36.9560181	Nahida Mod/Tags for minecraft:block
+// 1.20.4	2024-08-18T19:09:04.2334268	Nahida Mod/Tags for minecraft:block
 8f6628c07cae4ac377969e151d414ee1132da8ae data\nahidamod\tags\blocks\metal_detector_detectable_blocks.json
 bc2e19e0a636bef0eaf7ec1a3e08ca44cca7174b data\minecraft\tags\blocks\mineable\pickaxe.json
-f50e7503aca0e13844b6b954182fc1268b375000 data\minecraft\tags\blocks\climbable.json
 cbd15f9b5c2615ddf04e3d14d304715fac90385d data\fabric\tags\blocks\needs_tool_level_5.json
+f50e7503aca0e13844b6b954182fc1268b375000 data\minecraft\tags\blocks\climbable.json
 f1cdea40dd66a47cd21e636d1b98069e200bbaf5 data\minecraft\tags\blocks\fences.json
 afa321822ec2c94c8fca2752e3313c1f7bbd8daf data\minecraft\tags\blocks\walls.json
 fdc2bc0280827535db5bafc4ba9fceeccaa2a82f data\minecraft\tags\blocks\planks.json

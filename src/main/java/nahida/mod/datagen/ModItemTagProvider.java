@@ -17,8 +17,8 @@ public class ModItemTagProvider extends FabricTagProvider.ItemTagProvider {
 
     @Override
     public void configure(RegistryWrapper.WrapperLookup arg) {
-        //getOrCreateTagBuilder(ItemTags.TRIMMABLE_ARMOR)
-        //.add(ModItems.AURORA_HELMET)
+        getOrCreateTagBuilder(ItemTags.TRIMMABLE_ARMOR)
+            .add(ModItems.AURORA_HELMET, ModItems.AURORA_CHESPLATE, ModItems.AURORA_LEGGINGS, ModItems.AURORA_BOOTS);
         
         getOrCreateTagBuilder(ItemTags.MUSIC_DISCS)
             .add(ModItems.KIRA_KILLER_MUSIC_DISC);
