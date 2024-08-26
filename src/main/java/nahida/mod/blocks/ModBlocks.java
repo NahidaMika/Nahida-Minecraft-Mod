@@ -1,6 +1,7 @@
 package nahida.mod.blocks;
 
 import nahida.mod.NahidaMod;
+import nahida.mod.blocks.custom.CucumberCropBlock;
 import nahida.mod.blocks.custom.SoundBlock;
 import nahida.mod.sounds.ModSounds;
 import net.minecraft.block.AbstractBlock;
@@ -38,7 +39,7 @@ public class ModBlocks {
         new ExperienceDroppingBlock(UniformIntProvider.create(5, 20), AbstractBlock.Settings.copy(Blocks.DEEPSLATE).strength(4.5F, 3.0F).sounds(BlockSoundGroup.DEEPSLATE)));
 
     public static final Block SOUND_BLOCK = registerBlock("sound_block",
-        new SoundBlock(AbstractBlock.Settings.copy(Blocks.IRON_BLOCK).strength(-1F,36666666F)));
+        new SoundBlock(AbstractBlock.Settings.copy(Blocks.IRON_BLOCK).strength(1F,36666666F)));
 
     //My wood
 
@@ -71,6 +72,11 @@ public class ModBlocks {
 
     public static final Block LAVANDER_TRAPDOOR = registerBlock("lavander_trapdoor",
         new TrapdoorBlock(BlockSetType.CHERRY ,AbstractBlock.Settings.copy(Blocks.DIAMOND_BLOCK).nonOpaque()));
+
+    // Crops
+    public static final Block CUCUMBER_CROP = Registry.register(Registries.BLOCK, new Identifier(NahidaMod.MOD_ID, "cucumber_crop"),
+        new CucumberCropBlock(AbstractBlock.Settings.copy(Blocks.CARROTS)));
+        
 
     
 

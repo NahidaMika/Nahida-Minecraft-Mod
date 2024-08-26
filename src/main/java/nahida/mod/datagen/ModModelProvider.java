@@ -2,6 +2,7 @@ package nahida.mod.datagen;
 
 import nahida.mod.Item.ModItems;
 import nahida.mod.blocks.ModBlocks;
+import nahida.mod.blocks.custom.CucumberCropBlock;
 import net.fabricmc.fabric.api.datagen.v1.FabricDataOutput;
 import net.fabricmc.fabric.api.datagen.v1.provider.FabricModelProvider;
 import net.minecraft.data.client.BlockStateModelGenerator;
@@ -33,6 +34,8 @@ public class ModModelProvider extends FabricModelProvider {
 
         blockStateModelGenerator.registerDoor(ModBlocks.LAVANDER_DOOR);
         blockStateModelGenerator.registerTrapdoor(ModBlocks.LAVANDER_TRAPDOOR);
+
+        blockStateModelGenerator.registerCrop(ModBlocks.CUCUMBER_CROP, CucumberCropBlock.AGE, 0,1,2,3,4,5);
     }
 
     @Override
@@ -50,6 +53,8 @@ public class ModModelProvider extends FabricModelProvider {
         itemModelGenerator.register(ModItems.KIRA_KILLER_MUSIC_DISC, Models.GENERATED);
         itemModelGenerator.register(ModItems.METAL_DETECTOR, Models.HANDHELD);
         itemModelGenerator.register(ModItems.MISTSPLITTER_REFORGED, Models.HANDHELD);
+        itemModelGenerator.register(ModItems.CUCUMBER, Models.GENERATED);
+        
 
         itemModelGenerator.registerArmor(((ArmorItem) ModItems.AURORA_HELMET));
         itemModelGenerator.registerArmor(((ArmorItem) ModItems.AURORA_CHESPLATE));

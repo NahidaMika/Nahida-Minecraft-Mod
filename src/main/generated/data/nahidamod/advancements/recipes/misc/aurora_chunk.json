@@ -13,12 +13,12 @@
       },
       "trigger": "minecraft:inventory_changed"
     },
-    "has_aurora_ingot": {
+    "has_aurora_chunk": {
       "conditions": {
         "items": [
           {
             "items": [
-              "nahidamod:aurora_ingot"
+              "nahidamod:aurora_chunk"
             ]
           }
         ]
@@ -35,7 +35,7 @@
   "requirements": [
     [
       "has_the_recipe",
-      "has_aurora_ingot",
+      "has_aurora_chunk",
       "has_aurora_block"
     ]
   ],

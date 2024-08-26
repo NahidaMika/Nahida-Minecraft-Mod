@@ -56,6 +56,9 @@ public class ModItemGroups {
                 entries.add(ModBlocks.LAVANDER_STAIRS);
                 entries.add(ModBlocks.LAVANDER_TRAPDOOR);
                 entries.add(ModBlocks.LAVANDER_WALL);
+
+                entries.add(ModItems.CUCUMBER);
+                entries.add(ModItems.CUCUMBER_SEEDS);
             })
             .build());
     public static void RegisterItemGroups() { 

@@ -11,6 +11,7 @@ import net.minecraft.registry.Registries;
 import net.minecraft.registry.Registry;
 import net.minecraft.util.Identifier;
 import net.minecraft.util.Rarity;
+import net.minecraft.item.AliasedBlockItem;
 import net.minecraft.item.ArmorItem;
 import net.minecraft.item.AxeItem;
 import net.minecraft.item.BowItem;
@@ -18,8 +19,10 @@ import net.minecraft.item.HoeItem;
 import net.minecraft.item.Item;
 import net.minecraft.item.ItemGroups;
 import nahida.mod.Item.Custom.MetalDetectorItem;
+import nahida.mod.Item.Custom.ModArmorItem;
 import nahida.mod.Item.Custom.ModArmorMaterial;
 import nahida.mod.Item.Custom.ModToolMaterial;
+import nahida.mod.blocks.ModBlocks;
 import nahida.mod.sounds.ModSounds;
 
 public class ModItems {
@@ -39,11 +42,16 @@ public class ModItems {
     public static final Item MISTSPLITTER_REFORGED = registerItem("mistsplitter_reforged", new SwordItem(ModToolMaterial.AURORA, 12, 8F, new Item.Settings().maxCount(1).rarity(Rarity.EPIC).fireproof()));
     public static final Item BOWS = registerItem("bows", new BowItem(new Item.Settings().maxCount(1).rarity(Rarity.EPIC).fireproof()));
 
-    public static final Item AURORA_HELMET = registerItem("aurora_helmet", new ArmorItem(ModArmorMaterial.AURORA, ArmorItem.Type.HELMET, new Item.Settings().maxCount(1).fireproof().rarity(Rarity.RARE)));
+    public static final Item AURORA_HELMET = registerItem("aurora_helmet", new ModArmorItem(ModArmorMaterial.AURORA, ArmorItem.Type.HELMET, new Item.Settings().maxCount(1).fireproof().rarity(Rarity.RARE)));
     public static final Item AURORA_CHESPLATE = registerItem("aurora_chestplate", new ArmorItem(ModArmorMaterial.AURORA, ArmorItem.Type.CHESTPLATE, new Item.Settings().maxCount(1).fireproof().rarity(Rarity.RARE)));
     public static final Item AURORA_LEGGINGS = registerItem("aurora_leggings", new ArmorItem(ModArmorMaterial.AURORA, ArmorItem.Type.LEGGINGS, new Item.Settings().maxCount(1).fireproof().rarity(Rarity.RARE)));
     public static final Item AURORA_BOOTS = registerItem("aurora_boots", new ArmorItem(ModArmorMaterial.AURORA, ArmorItem.Type.BOOTS, new Item.Settings().maxCount(1).fireproof().rarity(Rarity.RARE)));
     
+    public static final Item CUCUMBER = registerItem("cucumber", new Item(new Item.Settings().food(ModFoodComponents.CUCUMBER).maxCount(64)));
+
+    public static final Item CUCUMBER_SEEDS = registerItem("cucumber_seeds", 
+    new AliasedBlockItem(ModBlocks.CUCUMBER_CROP, new Item.Settings()));
+
     private static void addItemsToFirstItemGroup(FabricItemGroupEntries entries) {
         entries.add(AURORA_INGOT);
     }

@@ -14,6 +14,7 @@ import nahida.mod.blocks.ModBlocks;
 import nahida.mod.enchant.SmeltingEnchantment;
 import nahida.mod.sounds.ModSounds;
 import nahida.mod.util.ModCustomTrades;
+import nahida.mod.util.ModLootTableModifiers;
 import nahida.mod.world.gen.ModWorldGeneration;
 
 public class NahidaMod implements ModInitializer {
@@ -44,8 +45,11 @@ public class NahidaMod implements ModInitializer {
 		ModSounds.registerSounds();
 		LOGGER.info("Initializing the register of custom enchat (Smelting) of " + NahidaMod.MOD_ID );
 		SmeltingEnchantment.registerSmeltingEnchantment();
-		LOGGER.info("Initializing the register of custom ore generatio of " + NahidaMod.MOD_ID );
+		LOGGER.info("Initializing the register of custom ore generation of " + NahidaMod.MOD_ID );
 		ModWorldGeneration.generateModWorldGen();
+		LOGGER.info("Initializing the register of custom loot tables of " + NahidaMod.MOD_ID );
+		ModLootTableModifiers.modifyLootTables();
+
 		
 	}
 }

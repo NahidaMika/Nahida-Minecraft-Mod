@@ -20,4 +20,6 @@ public class ModFoodComponents {
     .statusEffect(new StatusEffectInstance(StatusEffects.WATER_BREATHING, 3000, 2), 0.75f)
     .alwaysEdible()
     .build();
+
+    public static final FoodComponent CUCUMBER = new FoodComponent.Builder().hunger(3).saturationModifier(1F).build();
 }

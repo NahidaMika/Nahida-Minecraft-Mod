@@ -3,10 +3,10 @@
   "category": "misc",
   "key": {
     "A": {
-      "item": "nahidamod:aurora_ingot"
+      "item": "nahidamod:aurora_block"
     },
     "B": {
-      "item": "nahidamod:aurora_block"
+      "item": "nahidamod:aurora_chunk"
     }
   },
   "pattern": [

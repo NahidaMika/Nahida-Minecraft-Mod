@@ -2,21 +2,23 @@ package nahida.mod.datagen;
 
 import nahida.mod.Item.ModItems;
 import nahida.mod.blocks.ModBlocks;
-
+import nahida.mod.blocks.custom.CucumberCropBlock;
 import net.fabricmc.fabric.api.datagen.v1.FabricDataOutput;
 import net.fabricmc.fabric.api.datagen.v1.provider.FabricBlockLootTableProvider;
 
 import net.minecraft.block.Block;
+import net.minecraft.data.server.loottable.vanilla.VanillaBlockLootTableGenerator;
 import net.minecraft.enchantment.Enchantments;
 import net.minecraft.item.Item;
 import net.minecraft.loot.LootTable;
-
+import net.minecraft.loot.condition.BlockStatePropertyLootCondition;
 import net.minecraft.loot.entry.ItemEntry;
 import net.minecraft.loot.entry.LootPoolEntry;
 import net.minecraft.loot.function.ApplyBonusLootFunction;
 
 import net.minecraft.loot.function.SetCountLootFunction;
 import net.minecraft.loot.provider.number.UniformLootNumberProvider;
+import net.minecraft.predicate.StatePredicate;
 
 
 
@@ -40,12 +42,20 @@ public class ModLootTableProvider extends FabricBlockLootTableProvider {
         addDrop(ModBlocks.LAVANDER_BUTTON);
         addDrop(ModBlocks.LAVANDER_PLANKS);
         addDrop(ModBlocks.LAVANDER_PRESSURE_PLATE);
+        addDrop(ModBlocks.SOUND_BLOCK);
         
         addDrop(ModBlocks.LAVANDER_DOOR, doorDrops(ModBlocks.LAVANDER_DOOR));
         addDrop(ModBlocks.LAVANDER_SLAB, slabDrops(ModBlocks.LAVANDER_SLAB));
 
-        
+        BlockStatePropertyLootCondition.Builder builder = BlockStatePropertyLootCondition.builder(ModBlocks.CUCUMBER_CROP).properties(StatePredicate.Builder.create()
+                .exactMatch(CucumberCropBlock.AGE, 5));
+        addDrop(ModBlocks.CUCUMBER_CROP, cropDrops(ModBlocks.CUCUMBER_CROP, ModItems.CUCUMBER, ModItems.CUCUMBER_SEEDS, builder));
     }
+        
+
+
+    
+    
 
     public LootTable.Builder oreDrops(Block drop, Item item) {
         return dropsWithSilkTouch(
