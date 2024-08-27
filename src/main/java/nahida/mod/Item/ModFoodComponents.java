@@ -22,4 +22,7 @@ public class ModFoodComponents {
     .build();
 
     public static final FoodComponent CUCUMBER = new FoodComponent.Builder().hunger(3).saturationModifier(1F).build();
+
+    public static final FoodComponent RICE = new FoodComponent.Builder().hunger(2).saturationModifier(.4f).build();
+    public static final FoodComponent COOKED_RICE = new FoodComponent.Builder().hunger(5).saturationModifier(.8f).build();
 }

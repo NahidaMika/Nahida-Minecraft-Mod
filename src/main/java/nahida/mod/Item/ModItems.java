@@ -49,8 +49,17 @@ public class ModItems {
     
     public static final Item CUCUMBER = registerItem("cucumber", new Item(new Item.Settings().food(ModFoodComponents.CUCUMBER).maxCount(64)));
 
+
     public static final Item CUCUMBER_SEEDS = registerItem("cucumber_seeds", 
     new AliasedBlockItem(ModBlocks.CUCUMBER_CROP, new Item.Settings()));
+
+    public static final Item RICE_SEEDS = registerItem("rice_seeds", 
+    new AliasedBlockItem(ModBlocks.RICE_CROP, new Item.Settings()));
+
+    public static final Item RICE = registerItem("rice", new Item(new Item.Settings().food(ModFoodComponents.RICE).maxCount(64)));
+    public static final Item COOKED_RICE = registerItem("cooked_rice", new Item(new Item.Settings().food(ModFoodComponents.COOKED_RICE).maxCount(64)));
+
+
 
     private static void addItemsToFirstItemGroup(FabricItemGroupEntries entries) {
         entries.add(AURORA_INGOT);

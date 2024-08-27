@@ -2,6 +2,7 @@ package nahida.mod.blocks;
 
 import nahida.mod.NahidaMod;
 import nahida.mod.blocks.custom.CucumberCropBlock;
+import nahida.mod.blocks.custom.RiceCropBlock;
 import nahida.mod.blocks.custom.SoundBlock;
 import nahida.mod.sounds.ModSounds;
 import net.minecraft.block.AbstractBlock;
@@ -75,7 +76,10 @@ public class ModBlocks {
 
     // Crops
     public static final Block CUCUMBER_CROP = Registry.register(Registries.BLOCK, new Identifier(NahidaMod.MOD_ID, "cucumber_crop"),
-        new CucumberCropBlock(AbstractBlock.Settings.copy(Blocks.CARROTS)));
+        new CucumberCropBlock(AbstractBlock.Settings.copy(Blocks.WHEAT)));
+
+    public static final Block RICE_CROP = Registry.register(Registries.BLOCK, new Identifier(NahidaMod.MOD_ID, "rice_crop"),
+        new RiceCropBlock(AbstractBlock.Settings.copy(Blocks.WHEAT)));
         
 
     

@@ -59,6 +59,10 @@ public class ModItemGroups {
 
                 entries.add(ModItems.CUCUMBER);
                 entries.add(ModItems.CUCUMBER_SEEDS);
+                
+                entries.add(ModItems.RICE_SEEDS);
+                entries.add(ModItems.RICE);
+                entries.add(ModItems.COOKED_RICE);
             })
             .build());
     public static void RegisterItemGroups() { 
